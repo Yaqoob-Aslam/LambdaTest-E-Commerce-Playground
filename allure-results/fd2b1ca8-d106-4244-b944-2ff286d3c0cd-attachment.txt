@@ -1,0 +1,1 @@
+[2026-09-28T10:40:11.180Z] [INFO] [ProductDetailsPage] Open /index.php?route=product/product&product_id=41

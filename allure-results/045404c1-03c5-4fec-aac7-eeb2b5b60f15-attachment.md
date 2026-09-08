@@ -1,0 +1,649 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: e2e/purchase-journey.spec.ts >> End-to-End >> TC_E2E_001_Search_To_Checkout_Journey
+- Location: tests/e2e/purchase-journey.spec.ts:11:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - heading [level=5] [ref=f4e4]:
+        - text: Top categories
+        - link "close" [ref=f4e5] [cursor=pointer]:
+          - /url: "#mz-component-1626147655"
+          - text: 
+      - navigation [ref=f4e8]:
+        - list [ref=f4e10]:
+          - listitem [ref=f4e11]:
+            - link "Components" [ref=f4e12] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=25
+          - listitem [ref=f4e18]:
+            - link "Cameras" [ref=f4e19] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33
+          - listitem [ref=f4e25]:
+            - link "Phone, Tablets & Ipod" [ref=f4e26] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57
+          - listitem [ref=f4e32]:
+            - link "Software" [ref=f4e33] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+          - listitem [ref=f4e39]:
+            - link "MP3 Players" [ref=f4e40] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=34
+          - listitem [ref=f4e46]:
+            - link "Laptops & Notebooks" [ref=f4e47] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18
+          - listitem [ref=f4e53]:
+            - link "Desktops and Monitors" [ref=f4e54] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=28
+          - listitem [ref=f4e60]:
+            - link "Printers & Scanners" [ref=f4e61] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=30
+          - listitem [ref=f4e67]:
+            - link "Mice and Trackballs" [ref=f4e68] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=29
+          - listitem [ref=f4e74]:
+            - link "Fashion and Accessories" [ref=f4e75] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=f4e81]:
+            - link "Beauty and Saloon" [ref=f4e82] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=f4e88]:
+            - link "Autoparts and Accessories" [ref=f4e89] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=f4e95]:
+            - link "Washing machine" [ref=f4e96] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=f4e102]:
+            - link "Gaming consoles" [ref=f4e103] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=f4e109]:
+            - link "Air conditioner" [ref=f4e110] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=f4e116]:
+            - link "Web Cameras" [ref=f4e117] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=32
+    - generic [ref=f4e123]:
+      - heading [level=5] [ref=f4e124]:
+        - text: Quick Links
+        - link "close" [ref=f4e125] [cursor=pointer]:
+          - /url: "#mz-component-162614767"
+          - text: 
+      - generic [ref=f4e126]:
+        - navigation [ref=f4e128]:
+          - list [ref=f4e130]:
+            - listitem [ref=f4e131]:
+              - link " Special Hot" [ref=f4e132] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                - generic [ref=f4e133]: 
+                - generic [ref=f4e134]: Special
+                - generic [ref=f4e136]: Hot
+            - listitem [ref=f4e137]:
+              - link " Wishlist" [ref=f4e138] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+                - generic [ref=f4e139]: 
+                - generic [ref=f4e140]: Wishlist
+            - listitem [ref=f4e142]:
+              - link " Compare" [ref=f4e143] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+                - generic [ref=f4e144]: 
+                - generic [ref=f4e145]: Compare
+            - listitem [ref=f4e147]:
+              - link " My account" [ref=f4e148] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+                - generic [ref=f4e149]: 
+                - generic [ref=f4e150]: My account
+            - listitem [ref=f4e152]:
+              - link " Blog" [ref=f4e153] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+                - generic [ref=f4e154]: 
+                - generic [ref=f4e155]: Blog
+            - listitem [ref=f4e157]:
+              - link " Tracking" [ref=f4e158] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/tracking
+                - generic [ref=f4e159]: 
+                - generic [ref=f4e160]: Tracking
+            - listitem [ref=f4e162]:
+              - link " Contact us" [ref=f4e163] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/contact
+                - generic [ref=f4e164]: 
+                - generic [ref=f4e165]: Contact us
+        - separator [ref=f4e168]
+        - paragraph [ref=f4e171]: Place here any module, widget, design or HTML. for example menu, categories
+    - generic [ref=f4e172]:
+      - heading [level=5] [ref=f4e173]:
+        - text: Cart
+        - link "close" [ref=f4e174] [cursor=pointer]:
+          - /url: "#cart-total-drawer"
+          - text: 
+      - generic [ref=f4e175]:
+        - generic [ref=f4e176]:
+          - table [ref=f4e178]:
+            - rowgroup [ref=f4e179]:
+              - row [ref=f4e180]:
+                - cell [ref=f4e181]:
+                  - link [ref=f4e182] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=41
+                    - img "iMac" [ref=f4e183]
+                - cell [ref=f4e184]:
+                  - link "iMac" [ref=f4e185] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=41
+                  - text: "Model: Product 14"
+                - cell "x1" [ref=f4e186]
+                - cell "$170.00" [ref=f4e187]
+          - table [ref=f4e188]:
+            - rowgroup [ref=f4e189]:
+              - row [ref=f4e190]:
+                - cell "Sub-Total:" [ref=f4e191]
+                - cell [ref=f4e192]:
+                  - strong [ref=f4e193]: $140.00
+              - row [ref=f4e194]:
+                - cell "Flat Shipping Rate:" [ref=f4e195]
+                - cell [ref=f4e196]:
+                  - strong [ref=f4e197]: $5.00
+              - row [ref=f4e198]:
+                - cell "Eco Tax (-2.00):" [ref=f4e199]
+                - cell [ref=f4e200]:
+                  - strong [ref=f4e201]: $4.00
+              - row [ref=f4e202]:
+                - cell "VAT (20%):" [ref=f4e203]
+                - cell [ref=f4e204]:
+                  - strong [ref=f4e205]: $29.00
+              - row [ref=f4e206]:
+                - cell "Total:" [ref=f4e207]
+                - cell [ref=f4e208]:
+                  - strong [ref=f4e209]: $178.00
+        - generic [ref=f4e211]:
+          - button " Edit cart" [ref=f4e213] [cursor=pointer]:
+            - generic [ref=f4e214]: 
+            - text: Edit cart
+          - button " Checkout" [ref=f4e216] [cursor=pointer]:
+            - generic [ref=f4e217]: 
+            - text: Checkout
+    - generic [ref=f4e218]:
+      - banner [ref=f4e219]:
+        - button "" [ref=f4e221] [cursor=pointer]
+        - generic [ref=f4e223]:
+          - generic [ref=f4e224]:
+            - figure [ref=f4e226]:
+              - link [ref=f4e227] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                - img "Poco Electro" [ref=f4e228]
+            - generic [ref=f4e232]:
+              - generic [ref=f4e234]:
+                - button "All Categories" [ref=f4e236] [cursor=pointer]
+                - textbox "Search For Products" [ref=f4e238]
+              - button "Search" [ref=f4e240] [cursor=pointer]
+            - link "Compare" [ref=f4e242] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+            - link "Wishlist" [ref=f4e247] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+            - button "1" [ref=f4e252] [cursor=pointer]
+          - text: 
+        - generic [ref=f4e258]:
+          - generic [ref=f4e260] [cursor=pointer]:
+            - button "Shop by Category" [ref=f4e262]
+            - navigation [ref=f4e267]:
+              - list [ref=f4e269]:
+                - listitem [ref=f4e270]:
+                  - link "Home" [ref=f4e271]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                - listitem [ref=f4e274]:
+                  - link "Special Hot" [ref=f4e275]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                    - generic [ref=f4e276]: Special
+                    - generic [ref=f4e278]: Hot
+                - listitem [ref=f4e279]:
+                  - link "Blog" [ref=f4e280]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+                - listitem [ref=f4e283]:
+                  - button "Mega Menu" [ref=f4e284]
+                - listitem [ref=f4e287]:
+                  - button "AddOns Featured" [ref=f4e288]:
+                    - generic [ref=f4e289]: AddOns
+                    - generic [ref=f4e291]: Featured
+                - listitem [ref=f4e292]:
+                  - button " My account" [ref=f4e293]:
+                    - generic [ref=f4e294]: 
+                    - generic [ref=f4e295]: My account
+          - text:  
+          - paragraph [ref=f4e299]:
+            - strong [ref=f4e300]: This is a dummy website for Web Automation Testing
+      - generic [ref=f4e301]:
+        - navigation "breadcrumb" [ref=f4e302]:
+          - list [ref=f4e303]:
+            - listitem [ref=f4e304]:
+              - link "" [ref=f4e305] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+            - listitem [ref=f4e307]:
+              - text: /
+              - link "Shopping Cart" [ref=f4e308] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart
+            - listitem [ref=f4e309]: / Checkout
+        - generic [ref=f4e313]:
+          - generic [ref=f4e315]:
+            - generic [ref=f4e316]:
+              - heading "Account" [level=4] [ref=f4e317]
+              - generic [ref=f4e318]:
+                - generic [ref=f4e319]:
+                  - radio "Login" [ref=f4e320]
+                  - generic [ref=f4e321]: Login
+                - generic [ref=f4e322]:
+                  - radio "Register Account" [checked] [ref=f4e323]
+                  - generic [ref=f4e324]: Register Account
+                - generic [ref=f4e325]:
+                  - radio "Guest Checkout" [ref=f4e326]
+                  - generic [ref=f4e327]: Guest Checkout
+            - generic [ref=f4e328]:
+              - generic [ref=f4e329]:
+                - heading "Your Personal Details" [level=4] [ref=f4e330]
+                - generic [ref=f4e331]:
+                  - generic [ref=f4e332]: First Name*
+                  - textbox "First Name*" [ref=f4e334]:
+                    - /placeholder: First Name
+                - generic [ref=f4e335]:
+                  - generic [ref=f4e336]: Last Name*
+                  - textbox "Last Name*" [ref=f4e338]:
+                    - /placeholder: Last Name
+                - generic [ref=f4e339]:
+                  - generic [ref=f4e340]: E-Mail*
+                  - textbox "E-Mail*" [ref=f4e342]:
+                    - /placeholder: E-Mail
+                - generic [ref=f4e343]:
+                  - generic [ref=f4e344]: Telephone*
+                  - generic [ref=f4e345]:
+                    - textbox "Telephone*" [ref=f4e346]:
+                      - /placeholder: Telephone
+                    - generic [ref=f4e347]: Enter valid phone number with country code!
+                - generic [ref=f4e348]:
+                  - generic [ref=f4e349]:
+                    - generic [ref=f4e350]: Password*
+                    - textbox "Password*" [ref=f4e352]:
+                      - /placeholder: Password
+                  - generic [ref=f4e353]:
+                    - generic [ref=f4e354]: Password Confirm*
+                    - textbox "Password Confirm*" [ref=f4e356]:
+                      - /placeholder: Password Confirm
+              - generic [ref=f4e357]:
+                - heading "Billing Address" [level=4] [ref=f4e358]
+                - generic [ref=f4e359]:
+                  - generic [ref=f4e360]: Company
+                  - textbox "Company" [ref=f4e362]
+                - generic [ref=f4e363]:
+                  - generic [ref=f4e364]: Address 1*
+                  - textbox "Address 1*" [ref=f4e366]:
+                    - /placeholder: Address 1
+                - generic [ref=f4e367]:
+                  - generic [ref=f4e368]: Address 2
+                  - textbox "Address 2" [ref=f4e370]
+                - generic [ref=f4e371]:
+                  - generic [ref=f4e372]: City*
+                  - textbox "City*" [ref=f4e374]:
+                    - /placeholder: City
+                - generic [ref=f4e375]:
+                  - generic [ref=f4e376]: Post Code*
+                  - textbox "Post Code*" [ref=f4e378]:
+                    - /placeholder: Post Code
+                - generic [ref=f4e379]:
+                  - generic [ref=f4e380]: Country*
+                  - combobox "Country*" [disabled] [ref=f4e382]:
+                    - option "--- Please Select ---"
+                    - option "Aaland Islands"
+                    - option "Afghanistan"
+                    - option "Albania"
+                    - option "Algeria"
+                    - option "American Samoa"
+                    - option "Andorra"
+                    - option "Angola"
+                    - option "Anguilla"
+                    - option "Antarctica"
+                    - option "Antigua and Barbuda"
+                    - option "Argentina"
+                    - option "Armenia"
+                    - option "Aruba"
+                    - option "Ascension Island (British)"
+                    - option "Australia"
+                    - option "Austria"
+                    - option "Azerbaijan"
+                    - option "Bahamas"
+                    - option "Bahrain"
+                    - option "Bangladesh"
+                    - option "Barbados"
+                    - option "Belarus"
+                    - option "Belgium"
+                    - option "Belize"
+                    - option "Benin"
+                    - option "Bermuda"
+                    - option "Bhutan"
+                    - option "Bolivia"
+                    - option "Bonaire, Sint Eustatius and Saba"
+                    - option "Bosnia and Herzegovina"
+                    - option "Botswana"
+                    - option "Bouvet Island"
+                    - option "Brazil"
+                    - option "British Indian Ocean Territory"
+                    - option "Brunei Darussalam"
+                    - option "Bulgaria"
+                    - option "Burkina Faso"
+                    - option "Burundi"
+                    - option "Cambodia"
+                    - option "Cameroon"
+                    - option "Canada"
+                    - option "Canary Islands"
+                    - option "Cape Verde"
+                    - option "Cayman Islands"
+                    - option "Central African Republic"
+                    - option "Chad"
+                    - option "Chile"
+                    - option "China"
+                    - option "Christmas Island"
+                    - option "Cocos (Keeling) Islands"
+                    - option "Colombia"
+                    - option "Comoros"
+                    - option "Congo"
+                    - option "Cook Islands"
+                    - option "Costa Rica"
+                    - option "Cote D'Ivoire"
+                    - option "Croatia"
+                    - option "Cuba"
+                    - option "Curacao"
+                    - option "Cyprus"
+                    - option "Czech Republic"
+                    - option "Democratic Republic of Congo"
+                    - option "Denmark"
+                    - option "Djibouti"
+                    - option "Dominica"
+                    - option "Dominican Republic"
+                    - option "East Timor"
+                    - option "Ecuador"
+                    - option "Egypt"
+                    - option "El Salvador"
+                    - option "Equatorial Guinea"
+                    - option "Eritrea"
+                    - option "Estonia"
+                    - option "Ethiopia"
+                    - option "Falkland Islands (Malvinas)"
+                    - option "Faroe Islands"
+                    - option "Fiji"
+                    - option "Finland"
+                    - option "France, Metropolitan"
+                    - option "French Guiana"
+                    - option "French Polynesia"
+                    - option "French Southern Territories"
+                    - option "FYROM"
+                    - option "Gabon"
+                    - option "Gambia"
+                    - option "Georgia"
+                    - option "Germany"
+                    - option "Ghana"
+                    - option "Gibraltar"
+                    - option "Greece"
+                    - option "Greenland"
+                    - option "Grenada"
+                    - option "Guadeloupe"
+                    - option "Guam"
+                    - option "Guatemala"
+                    - option "Guernsey"
+                    - option "Guinea"
+                    - option "Guinea-Bissau"
+                    - option "Guyana"
+                    - option "Haiti"
+                    - option "Heard and Mc Donald Islands"
+                    - option "Honduras"
+                    - option "Hong Kong"
+                    - option "Hungary"
+                    - option "Iceland"
+                    - option "India"
+                    - option "Indonesia"
+                    - option "Iran (Islamic Republic of)"
+                    - option "Iraq"
+                    - option "Ireland"
+                    - option "Isle of Man"
+                    - option "Israel"
+                    - option "Italy"
+                    - option "Jamaica"
+                    - option "Japan"
+                    - option "Jersey"
+                    - option "Jordan"
+                    - option "Kazakhstan"
+                    - option "Kenya"
+                    - option "Kiribati"
+                    - option "Kosovo, Republic of"
+                    - option "Kuwait"
+                    - option "Kyrgyzstan"
+                    - option "Lao People's Democratic Republic"
+                    - option "Latvia"
+                    - option "Lebanon"
+                    - option "Lesotho"
+                    - option "Liberia"
+                    - option "Libyan Arab Jamahiriya"
+                    - option "Liechtenstein"
+                    - option "Lithuania"
+                    - option "Luxembourg"
+                    - option "Macau"
+                    - option "Madagascar"
+                    - option "Malawi"
+                    - option "Malaysia"
+                    - option "Maldives"
+                    - option "Mali"
+                    - option "Malta"
+                    - option "Marshall Islands"
+                    - option "Martinique"
+                    - option "Mauritania"
+                    - option "Mauritius"
+                    - option "Mayotte"
+                    - option "Mexico"
+                    - option "Micronesia, Federated States of"
+                    - option "Moldova, Republic of"
+                    - option "Monaco"
+                    - option "Mongolia"
+                    - option "Montenegro"
+                    - option "Montserrat"
+                    - option "Morocco"
+                    - option "Mozambique"
+                    - option "Myanmar"
+                    - option "Namibia"
+                    - option "Nauru"
+                    - option "Nepal"
+                    - option "Netherlands"
+                    - option "Netherlands Antilles"
+                    - option "New Caledonia"
+                    - option "New Zealand"
+                    - option "Nicaragua"
+                    - option "Niger"
+                    - option "Nigeria"
+                    - option "Niue"
+                    - option "Norfolk Island"
+                    - option "North Korea"
+                    - option "Northern Mariana Islands"
+                    - option "Norway"
+                    - option "Oman"
+                    - option "Pakistan"
+                    - option "Palau"
+                    - option "Palestinian Territory, Occupied"
+                    - option "Panama"
+                    - option "Papua New Guinea"
+                    - option "Paraguay"
+                    - option "Peru"
+                    - option "Philippines"
+                    - option "Pitcairn"
+                    - option "Poland"
+                    - option "Portugal"
+                    - option "Puerto Rico"
+                    - option "Qatar"
+                    - option "Reunion"
+                    - option "Romania"
+                    - option "Russian Federation"
+                    - option "Rwanda"
+                    - option "Saint Kitts and Nevis"
+                    - option "Saint Lucia"
+                    - option "Saint Vincent and the Grenadines"
+                    - option "Samoa"
+                    - option "San Marino"
+                    - option "Sao Tome and Principe"
+                    - option "Saudi Arabia"
+                    - option "Senegal"
+                    - option "Serbia"
+                    - option "Seychelles"
+                    - option "Sierra Leone"
+                    - option "Singapore"
+                    - option "Slovak Republic"
+                    - option "Slovenia"
+                    - option "Solomon Islands"
+                    - option "Somalia"
+                    - option "South Africa"
+                    - option "South Georgia & South Sandwich Islands"
+                    - option "South Korea"
+                    - option "South Sudan"
+                    - option "Spain"
+                    - option "Sri Lanka"
+                    - option "St. Barthelemy"
+                    - option "St. Helena"
+                    - option "St. Martin (French part)"
+                    - option "St. Pierre and Miquelon"
+                    - option "Sudan"
+                    - option "Suriname"
+                    - option "Svalbard and Jan Mayen Islands"
+                    - option "Swaziland"
+                    - option "Sweden"
+                    - option "Switzerland"
+                    - option "Syrian Arab Republic"
+                    - option "Taiwan"
+                    - option "Tajikistan"
+                    - option "Tanzania, United Republic of"
+                    - option "Thailand"
+                    - option "Togo"
+                    - option "Tokelau"
+                    - option "Tonga"
+                    - option "Trinidad and Tobago"
+                    - option "Tristan da Cunha"
+                    - option "Tunisia"
+                    - option "Turkey"
+                    - option "Turkmenistan"
+                    - option "Turks and Caicos Islands"
+                    - option "Tuvalu"
+                    - option "Uganda"
+                    - option "Ukraine"
+                    - option "United Arab Emirates"
+                    - option "United Kingdom" [selected]
+                    - option "United States"
+                    - option "United States Minor Outlying Islands"
+                    - option "Uruguay"
+                    - option "Uzbekistan"
+                    - option "Vanuatu"
+                    - option "Vatican City State (Holy See)"
+                    - option "Venezuela"
+                    - option "Viet Nam"
+                    - option "Virgin Islands (British)"
+                    - option "Virgin Islands (U.S.)"
+                    - option "Wallis and Futuna Islands"
+                    - option "Western Sahara"
+                    - option "Yemen"
+                    - option "Zambia"
+                    - option "Zimbabwe"
+                - generic [ref=f4e383]:
+                  - generic [ref=f4e384]: Region / State*
+                  - combobox "Region / State*" [ref=f4e386]
+                - generic [ref=f4e387]:
+                  - checkbox "My delivery and billing addresses are the same." [checked] [ref=f4e388]
+                  - generic [ref=f4e389]: My delivery and billing addresses are the same.
+              - text: "* * * * * * *"
+            - generic [ref=f4e390]:
+              - heading "Please select the preferred payment method to use on this order." [level=4] [ref=f4e391]
+              - generic [ref=f4e392]:
+                - radio "Cash On Delivery" [checked] [ref=f4e393]
+                - generic [ref=f4e394]: Cash On Delivery
+            - generic [ref=f4e395]:
+              - heading "Please select the preferred shipping method to use on this order." [level=4] [ref=f4e396]
+              - paragraph [ref=f4e397]:
+                - strong [ref=f4e398]: Flat Rate
+              - generic [ref=f4e399]:
+                - radio "Flat Shipping Rate - $8.00" [checked] [ref=f4e400]
+                - generic [ref=f4e401]: Flat Shipping Rate - $8.00
+          - generic [ref=f4e403]:
+            - generic [ref=f4e404]:
+              - table [ref=f4e406]:
+                - rowgroup [ref=f4e407]:
+                  - row [ref=f4e408]:
+                    - columnheader "Image" [ref=f4e409]
+                    - columnheader "Product Name" [ref=f4e410]
+                    - columnheader "Quantity" [ref=f4e411]
+                    - columnheader "Unit Price" [ref=f4e412]
+                    - columnheader "Total" [ref=f4e413]
+                - rowgroup [ref=f4e414]:
+                  - row [ref=f4e415]:
+                    - cell [ref=f4e416]:
+                      - link [ref=f4e417] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=41
+                        - img "iMac" [ref=f4e418]
+                    - cell [ref=f4e419]:
+                      - link "iMac" [ref=f4e420] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=41
+                      - text: "Model: Product 14"
+                    - cell [ref=f4e421]:
+                      - generic [ref=f4e422]:
+                        - spinbutton [ref=f4e423]: "1"
+                        - generic [ref=f4e424]:
+                          - button "" [ref=f4e425] [cursor=pointer]
+                          - button "" [ref=f4e427] [cursor=pointer]
+                    - cell "$170.00" [ref=f4e429]
+                    - cell "$170.00" [ref=f4e430]
+              - table [ref=f4e431]:
+                - rowgroup [ref=f4e432]:
+                  - row [ref=f4e433]:
+                    - cell "Sub-Total:" [ref=f4e434]
+                    - cell [ref=f4e435]:
+                      - strong [ref=f4e436]: $140.00
+                  - row [ref=f4e437]:
+                    - cell "Flat Shipping Rate:" [ref=f4e438]
+                    - cell [ref=f4e439]:
+                      - strong [ref=f4e440]: $5.00
+                  - row [ref=f4e441]:
+                    - cell "Eco Tax (-2.00):" [ref=f4e442]
+                    - cell [ref=f4e443]:
+                      - strong [ref=f4e444]: $4.00
+                  - row [ref=f4e445]:
+                    - cell "VAT (20%):" [ref=f4e446]
+                    - cell [ref=f4e447]:
+                      - strong [ref=f4e448]: $29.00
+                  - row [ref=f4e449]:
+                    - cell "Total:" [ref=f4e450]
+                    - cell [ref=f4e451]:
+                      - strong [ref=f4e452]: $178.00
+              - generic [ref=f4e453]:
+                - heading "Use Coupon Code " [level=5] [ref=f4e455] [cursor=pointer]:
+                  - text: Use Coupon Code
+                  - generic [ref=f4e456]: 
+                - heading "Use Gift Certificate " [level=5] [ref=f4e458] [cursor=pointer]:
+                  - text: Use Gift Certificate
+                  - generic [ref=f4e459]: 
+            - generic [ref=f4e460]:
+              - generic [ref=f4e461]: Add Comments About Your Order
+              - textbox "Add Comments About Your Order" [ref=f4e462]
+            - generic [ref=f4e463]:
+              - checkbox "I have read and agree to the Terms & Conditions" [ref=f4e464]
+              - generic [ref=f4e465]:
+                - text: I have read and agree to the
+                - link "Terms & Conditions" [ref=f4e466] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/information/agree&information_id=5
+            - paragraph [ref=f4e468]: "* - Fields are required"
+            - button "Continue " [ref=f4e469] [cursor=pointer]:
+              - text: Continue
+              - generic [ref=f4e470]: 
+      - contentinfo [ref=f4e471]:
+        - paragraph [ref=f4e477]: © LambdaTest - Powered by OpenCart
+  - text:  
+```

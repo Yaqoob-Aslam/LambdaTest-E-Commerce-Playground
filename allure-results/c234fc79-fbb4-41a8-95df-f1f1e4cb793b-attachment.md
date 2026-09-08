@@ -1,0 +1,221 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: search/search.spec.ts >> Search >> TC_SEARCH_003_Non_Existent_Product_Shows_No_Results
+- Location: tests/search/search.spec.ts:37:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - heading "Top categories close" [level=5] [ref=f1e4]:
+      - text: Top categories
+      - link "close":
+        - /url: "#mz-component-1626147655"
+    - navigation [ref=f1e7]:
+      - list [ref=f1e9]:
+        - listitem [ref=f1e10]:
+          - link "Components" [ref=f1e11] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=25
+        - listitem [ref=f1e16]:
+          - link "Cameras" [ref=f1e17] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33
+        - listitem [ref=f1e22]:
+          - link "Phone, Tablets & Ipod" [ref=f1e23] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57
+        - listitem [ref=f1e28]:
+          - link "Software" [ref=f1e29] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+        - listitem [ref=f1e34]:
+          - link "MP3 Players" [ref=f1e35] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=34
+        - listitem [ref=f1e40]:
+          - link "Laptops & Notebooks" [ref=f1e41] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18
+        - listitem [ref=f1e46]:
+          - link "Desktops and Monitors" [ref=f1e47] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=28
+        - listitem [ref=f1e52]:
+          - link "Printers & Scanners" [ref=f1e53] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=30
+        - listitem [ref=f1e58]:
+          - link "Mice and Trackballs" [ref=f1e59] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=29
+        - listitem [ref=f1e64]:
+          - link "Fashion and Accessories" [ref=f1e65] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e70]:
+          - link "Beauty and Saloon" [ref=f1e71] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e76]:
+          - link "Autoparts and Accessories" [ref=f1e77] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e82]:
+          - link "Washing machine" [ref=f1e83] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e88]:
+          - link "Gaming consoles" [ref=f1e89] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e94]:
+          - link "Air conditioner" [ref=f1e95] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e100]:
+          - link "Web Cameras" [ref=f1e101] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=32
+  - generic [ref=f1e106]:
+    - heading "Quick Links close" [level=5] [ref=f1e107]:
+      - text: Quick Links
+      - link "close":
+        - /url: "#mz-component-162614767"
+    - generic [ref=f1e108]:
+      - navigation [ref=f1e110]:
+        - list [ref=f1e112]:
+          - listitem [ref=f1e113]:
+            - link "Special Hot" [ref=f1e114] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+              - generic [ref=f1e115]: Special
+              - generic [ref=f1e117]: Hot
+          - listitem [ref=f1e118]:
+            - link "Wishlist" [ref=f1e119] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+          - listitem [ref=f1e122]:
+            - link "Compare" [ref=f1e123] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+          - listitem [ref=f1e126]:
+            - link "My account" [ref=f1e127] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+          - listitem [ref=f1e130]:
+            - link "Blog" [ref=f1e131] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+          - listitem [ref=f1e134]:
+            - link "Tracking" [ref=f1e135] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/tracking
+          - listitem [ref=f1e138]:
+            - link "Contact us" [ref=f1e139] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/contact
+      - separator [ref=f1e143]
+      - paragraph [ref=f1e146]: Place here any module, widget, design or HTML. for example menu, categories
+  - generic [ref=f1e147]:
+    - heading "Cart close" [level=5] [ref=f1e148]:
+      - text: Cart
+      - link "close":
+        - /url: "#cart-total-drawer"
+    - generic [ref=f1e149]:
+      - generic [ref=f1e150]:
+        - paragraph [ref=f1e151]: Your shopping cart is empty!
+        - table [ref=f1e152]:
+          - rowgroup [ref=f1e153]:
+            - row [ref=f1e154]:
+              - cell "Sub-Total:" [ref=f1e155]
+              - cell [ref=f1e156]:
+                - strong [ref=f1e157]: $0.00
+            - row [ref=f1e158]:
+              - cell "Total:" [ref=f1e159]
+              - cell [ref=f1e160]:
+                - strong [ref=f1e161]: $0.00
+      - generic [ref=f1e163]:
+        - button "Edit cart" [ref=f1e165] [cursor=pointer]
+        - button "Checkout" [ref=f1e167] [cursor=pointer]
+  - generic [ref=f1e169]:
+    - generic [ref=f1e171]:
+      - heading "Filter" [level=4] [ref=f1e173]
+      - generic:
+        - button
+    - generic [ref=f1e176]:
+      - generic [ref=f1e177]:
+        - generic [ref=f1e178] [cursor=pointer]: Price
+        - generic [ref=f1e181]:
+          - spinbutton "Minimum Price" [ref=f1e182]: "0"
+          - generic [ref=f1e183]: to
+          - spinbutton "Maximum Price" [ref=f1e184]: "0"
+      - generic [ref=f1e185]:
+        - generic [ref=f1e186] [cursor=pointer]: Search
+        - textbox "Search" [ref=f1e189]
+      - generic [ref=f1e190]:
+        - generic [ref=f1e191] [cursor=pointer]: Availability
+        - generic [ref=f1e194]:
+          - generic [ref=f1e195]:
+            - checkbox "In stock" [disabled] [ref=f1e196]
+            - generic [ref=f1e197] [cursor=pointer]: In stock
+          - generic [ref=f1e198]: "0"
+      - generic [ref=f1e199]:
+        - generic [ref=f1e200] [cursor=pointer]: Discount
+        - generic [ref=f1e202]:
+          - generic [ref=f1e203]:
+            - generic [ref=f1e204]:
+              - radio "10% off or more" [disabled] [ref=f1e205]
+              - generic [ref=f1e206] [cursor=pointer]: 10% off or more
+            - generic [ref=f1e207]: "0"
+          - generic [ref=f1e208]:
+            - generic [ref=f1e209]:
+              - radio "20% off or more" [disabled] [ref=f1e210]
+              - generic [ref=f1e211] [cursor=pointer]: 20% off or more
+            - generic [ref=f1e212]: "0"
+          - generic [ref=f1e213]:
+            - generic [ref=f1e214]:
+              - radio "30% off or more" [disabled] [ref=f1e215]
+              - generic [ref=f1e216] [cursor=pointer]: 30% off or more
+            - generic [ref=f1e217]: "0"
+          - generic [ref=f1e218]:
+            - generic [ref=f1e219]:
+              - radio "40% off or more" [disabled] [ref=f1e220]
+              - generic [ref=f1e221] [cursor=pointer]: 40% off or more
+            - generic [ref=f1e222]: "0"
+          - generic [ref=f1e223]:
+            - generic [ref=f1e224]:
+              - radio "50% off or more" [disabled] [ref=f1e225]
+              - generic [ref=f1e226] [cursor=pointer]: 50% off or more
+            - generic [ref=f1e227]: "0"
+      - generic [ref=f1e228]:
+        - generic [ref=f1e229] [cursor=pointer]: Rating
+        - generic [ref=f1e231]:
+          - generic [ref=f1e232]:
+            - generic [ref=f1e233]:
+              - radio "& up" [disabled] [ref=f1e234]
+              - generic [ref=f1e235] [cursor=pointer]: "& up"
+            - generic [ref=f1e236]: "0"
+          - generic [ref=f1e237]:
+            - generic [ref=f1e238]:
+              - radio "& up" [disabled] [ref=f1e239]
+              - generic [ref=f1e240] [cursor=pointer]: "& up"
+            - generic [ref=f1e241]: "0"
+          - generic [ref=f1e242]:
+            - generic [ref=f1e243]:
+              - radio "& up" [disabled] [ref=f1e244]
+              - generic [ref=f1e245] [cursor=pointer]: "& up"
+            - generic [ref=f1e246]: "0"
+          - generic [ref=f1e247]:
+            - generic [ref=f1e248]:
+              - radio "& up" [disabled] [ref=f1e249]
+              - generic [ref=f1e250] [cursor=pointer]: "& up"
+            - generic [ref=f1e251]: "0"
+  - banner [ref=f1e253]:
+    - generic [ref=f1e254]:
+      - text: 
+      - generic [ref=f1e255] [cursor=pointer]:
+        - button "Shop by Category" [ref=f1e257]
+        - figure [ref=f1e261]:
+          - link [ref=f1e262]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+            - img "Poco Theme" [ref=f1e263]
+        - generic:
+          - button
+        - button "0" [ref=f1e265]
+    - generic [ref=f1e275]:
+      - generic [ref=f1e277]:
+        - button "All Categories" [ref=f1e279] [cursor=pointer]
+        - textbox "Search For Products" [ref=f1e281]: zxcvbnm123
+      - button "Search" [ref=f1e283] [cursor=pointer]
+```

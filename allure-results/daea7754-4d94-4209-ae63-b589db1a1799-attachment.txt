@@ -1,0 +1,1 @@
+[2026-09-27T08:01:41.993Z] [INFO] [RegisterPage] Open /index.php?route=account/register

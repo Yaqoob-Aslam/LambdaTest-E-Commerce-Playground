@@ -1,0 +1,1266 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: smoke/smoke.spec.ts >> Smoke — Critical Paths >> SMOKE-001_Application_Loads_And_Home_Renders
+- Location: tests/smoke/smoke.spec.ts:11:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+TimeoutError: page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://ecommerce-playground.lambdatest.io/", waiting until "domcontentloaded"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "Top categories close" [level=5] [ref=e4]:
+      - text: Top categories
+      - link "close":
+        - /url: "#mz-component-1626147655"
+    - navigation [ref=e7]:
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "Components" [ref=e11] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=25
+        - listitem [ref=e17]:
+          - link "Cameras" [ref=e18] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33
+        - listitem [ref=e24]:
+          - link "Phone, Tablets & Ipod" [ref=e25] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57
+        - listitem [ref=e31]:
+          - link "Software" [ref=e32] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+        - listitem [ref=e38]:
+          - link "MP3 Players" [ref=e39] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=34
+        - listitem [ref=e45]:
+          - link "Laptops & Notebooks" [ref=e46] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18
+        - listitem [ref=e52]:
+          - link "Desktops and Monitors" [ref=e53] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=28
+        - listitem [ref=e59]:
+          - link "Printers & Scanners" [ref=e60] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=30
+        - listitem [ref=e66]:
+          - link "Mice and Trackballs" [ref=e67] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=29
+        - listitem [ref=e73]:
+          - link "Fashion and Accessories" [ref=e74] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e80]:
+          - link "Beauty and Saloon" [ref=e81] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e87]:
+          - link "Autoparts and Accessories" [ref=e88] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e94]:
+          - link "Washing machine" [ref=e95] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e101]:
+          - link "Gaming consoles" [ref=e102] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e108]:
+          - link "Air conditioner" [ref=e109] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e115]:
+          - link "Web Cameras" [ref=e116] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=32
+  - generic [ref=e122]:
+    - heading "Quick Links close" [level=5] [ref=e123]:
+      - text: Quick Links
+      - link "close":
+        - /url: "#mz-component-162614767"
+    - generic [ref=e124]:
+      - navigation [ref=e126]:
+        - list [ref=e128]:
+          - listitem [ref=e129]:
+            - link "Special Hot" [ref=e130] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+              - generic [ref=e131]: Special
+              - generic [ref=e133]: Hot
+          - listitem [ref=e134]:
+            - link "Wishlist" [ref=e135] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+          - listitem [ref=e138]:
+            - link "Compare" [ref=e139] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+          - listitem [ref=e142]:
+            - link "My account" [ref=e143] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+          - listitem [ref=e146]:
+            - link "Blog" [ref=e147] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+          - listitem [ref=e150]:
+            - link "Tracking" [ref=e151] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/tracking
+          - listitem [ref=e154]:
+            - link "Contact us" [ref=e155] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/contact
+      - separator [ref=e159]
+      - paragraph [ref=e162]: Place here any module, widget, design or HTML. for example menu, categories
+  - generic [ref=e163]:
+    - heading "Cart close" [level=5] [ref=e164]:
+      - text: Cart
+      - link "close":
+        - /url: "#cart-total-drawer"
+    - generic [ref=e165]:
+      - generic [ref=e166]:
+        - paragraph [ref=e167]: Your shopping cart is empty!
+        - table [ref=e168]:
+          - rowgroup [ref=e169]:
+            - row [ref=e170]:
+              - cell "Sub-Total:" [ref=e171]
+              - cell [ref=e172]:
+                - strong [ref=e173]: $0.00
+            - row [ref=e174]:
+              - cell "Total:" [ref=e175]
+              - cell [ref=e176]:
+                - strong [ref=e177]: $0.00
+      - generic [ref=e179]:
+        - button "Edit cart" [ref=e181] [cursor=pointer]
+        - button "Checkout" [ref=e183] [cursor=pointer]
+  - generic [ref=e184]:
+    - banner [ref=e185]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button
+      - generic [ref=e187]:
+        - figure [ref=e189]:
+          - link [ref=e190] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+            - img "Poco Electro" [ref=e191]
+        - generic [ref=e195]:
+          - generic [ref=e197]:
+            - button "All Categories" [ref=e199] [cursor=pointer]
+            - textbox "Search For Products" [ref=e201]
+          - button "Search" [ref=e203] [cursor=pointer]
+        - link "Compare" [ref=e205] [cursor=pointer]:
+          - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+        - link "Wishlist" [ref=e210] [cursor=pointer]:
+          - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+        - button "0" [ref=e215] [cursor=pointer]
+      - generic [ref=e221]:
+        - generic [ref=e223] [cursor=pointer]:
+          - button "Shop by Category" [ref=e225]
+          - navigation [ref=e230]:
+            - list [ref=e232]:
+              - listitem [ref=e233]:
+                - link "Home" [ref=e234]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+              - listitem [ref=e237]:
+                - link "Special Hot" [ref=e238]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                  - generic [ref=e239]: Special
+                  - generic [ref=e241]: Hot
+              - listitem [ref=e242]:
+                - link "Blog" [ref=e243]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+              - listitem [ref=e246]:
+                - button "Mega Menu" [ref=e247]
+              - listitem [ref=e250]:
+                - button "AddOns Featured" [ref=e251]:
+                  - generic [ref=e252]: AddOns
+                  - generic [ref=e254]: Featured
+              - listitem [ref=e255]:
+                - button "My account" [ref=e256]
+        - text: 
+        - paragraph [ref=e261]:
+          - strong [ref=e262]: This is a dummy website for Web Automation Testing
+    - generic [ref=e263]:
+      - generic [ref=e266]:
+        - list [ref=e267]:
+          - listitem [ref=e268] [cursor=pointer]
+          - listitem [ref=e269] [cursor=pointer]
+          - listitem [ref=e270] [cursor=pointer]
+        - link [ref=e273] [cursor=pointer]:
+          - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=40
+          - img "Iphone 11 pro max" [ref=e274]
+      - generic [ref=e277]:
+        - generic [ref=e280]:
+          - generic [ref=e282]:
+            - heading "Upto 50% Off on Fully Automatic Top Load Washing Machine" [level=4] [ref=e283]
+            - paragraph [ref=e284]: Many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected.
+          - link "SHOP NOW" [ref=e285] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e286]:
+          - link [ref=e288] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/manufacturer/info&manufacturer_id=8
+            - img "Lumix S Series From Panasonic" [ref=e290]
+          - link [ref=e292] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=30
+            - img "MPOW H12 RC Headphone" [ref=e294]
+      - generic [ref=e296]:
+        - heading "Top Trending Categories" [level=3] [ref=e298]
+        - generic [ref=e301]:
+          - link [ref=e303] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=20
+            - figure [ref=e304]:
+              - img "Desktops" [ref=e306]
+              - heading "Desktops" [level=4] [ref=e308]
+          - link [ref=e310] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18
+            - figure [ref=e311]:
+              - img "Laptops" [ref=e313]
+              - heading "Laptops" [level=4] [ref=e315]
+          - link [ref=e317] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=25
+            - figure [ref=e318]:
+              - img "Components" [ref=e320]
+              - heading "Components" [level=4] [ref=e322]
+          - link [ref=e324] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57
+            - figure [ref=e325]:
+              - img "Tablets" [ref=e327]
+              - heading "Tablets" [level=4] [ref=e329]
+          - link [ref=e331] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+            - figure [ref=e332]:
+              - img "Software" [ref=e334]
+              - heading "Software" [level=4] [ref=e336]
+          - link [ref=e338] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=24
+            - figure [ref=e339]:
+              - img "Phones & PDAs" [ref=e341]
+              - heading "Phones & PDAs" [level=4] [ref=e343]
+          - link [ref=e345] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33
+            - figure [ref=e346]:
+              - img "Cameras" [ref=e348]
+              - heading "Cameras" [level=4] [ref=e350]
+          - link [ref=e352] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=34
+            - figure [ref=e353]:
+              - img "MP3 Players" [ref=e355]
+              - heading "MP3 Players" [level=4] [ref=e357]
+      - link [ref=e365] [cursor=pointer]:
+        - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=47
+        - img "HP25 headphone" [ref=e367]
+      - generic [ref=e369]:
+        - heading "Top Products" [level=3] [ref=e371]
+        - generic [ref=e378]:
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - link [ref=e383] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=107
+                - img "iMac" [ref=e386]
+                - list [ref=e387]:
+                  - listitem [ref=e388]:
+                    - img "iMac" [ref=e389]
+                  - listitem [ref=e390]:
+                    - img "iMac" [ref=e391]
+                  - listitem [ref=e392]:
+                    - img "iMac" [ref=e393]
+              - generic [ref=e394]:
+                - button "Add to Cart" [ref=e395] [cursor=pointer]
+                - button "Add to Wish List" [ref=e396] [cursor=pointer]
+                - button "Quick view" [ref=e397] [cursor=pointer]
+                - button "Compare this Product" [ref=e398] [cursor=pointer]
+            - generic [ref=e399]:
+              - heading [level=4] [ref=e400]:
+                - link "iMac" [ref=e401] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=107
+              - generic [ref=e402]: $170.00
+          - generic [ref=e404]:
+            - generic [ref=e405]:
+              - link [ref=e407] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=106
+                - img "iMac" [ref=e410]
+                - list [ref=e411]:
+                  - listitem [ref=e412]:
+                    - img "iMac" [ref=e413]
+                  - listitem [ref=e414]:
+                    - img "iMac" [ref=e415]
+                  - listitem [ref=e416]:
+                    - img "iMac" [ref=e417]
+              - generic [ref=e418]:
+                - button "Add to Cart" [ref=e419] [cursor=pointer]
+                - button "Add to Wish List" [ref=e420] [cursor=pointer]
+                - button "Quick view" [ref=e421] [cursor=pointer]
+                - button "Compare this Product" [ref=e422] [cursor=pointer]
+            - generic [ref=e423]:
+              - heading [level=4] [ref=e424]:
+                - link "iMac" [ref=e425] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=106
+              - generic [ref=e426]: $170.00
+          - generic [ref=e428]:
+            - generic [ref=e429]:
+              - link [ref=e431] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=105
+                - img "iMac" [ref=e434]
+                - list [ref=e435]:
+                  - listitem [ref=e436]:
+                    - img "iMac" [ref=e437]
+                  - listitem [ref=e438]:
+                    - img "iMac" [ref=e439]
+                  - listitem [ref=e440]:
+                    - img "iMac" [ref=e441]
+              - generic [ref=e442]:
+                - button "Add to Cart" [ref=e443] [cursor=pointer]
+                - button "Add to Wish List" [ref=e444] [cursor=pointer]
+                - button "Quick view" [ref=e445] [cursor=pointer]
+                - button "Compare this Product" [ref=e446] [cursor=pointer]
+            - generic [ref=e447]:
+              - heading [level=4] [ref=e448]:
+                - link "iMac" [ref=e449] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=105
+              - generic [ref=e450]: $170.00
+          - generic [ref=e452]:
+            - generic [ref=e453]:
+              - link [ref=e455] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=104
+                - img "iMac" [ref=e458]
+                - list [ref=e459]:
+                  - listitem [ref=e460]:
+                    - img "iMac" [ref=e461]
+                  - listitem [ref=e462]:
+                    - img "iMac" [ref=e463]
+                  - listitem [ref=e464]:
+                    - img "iMac" [ref=e465]
+              - generic [ref=e466]:
+                - button "Add to Cart" [ref=e467] [cursor=pointer]
+                - button "Add to Wish List" [ref=e468] [cursor=pointer]
+                - button "Quick view" [ref=e469] [cursor=pointer]
+                - button "Compare this Product" [ref=e470] [cursor=pointer]
+            - generic [ref=e471]:
+              - heading [level=4] [ref=e472]:
+                - link "iMac" [ref=e473] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=104
+              - generic [ref=e474]: $170.00
+          - generic [ref=e476]:
+            - generic [ref=e477]:
+              - link [ref=e479] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=103
+                - img "HTC Touch HD" [ref=e482]
+                - list [ref=e483]:
+                  - listitem [ref=e484]:
+                    - img "HTC Touch HD" [ref=e485]
+                  - listitem [ref=e486]:
+                    - img "HTC Touch HD" [ref=e487]
+                  - listitem [ref=e488]:
+                    - img "HTC Touch HD" [ref=e489]
+              - generic [ref=e490]:
+                - button "Add to Cart" [ref=e491] [cursor=pointer]
+                - button "Add to Wish List" [ref=e492] [cursor=pointer]
+                - button "Quick view" [ref=e493] [cursor=pointer]
+                - button "Compare this Product" [ref=e494] [cursor=pointer]
+            - generic [ref=e495]:
+              - heading [level=4] [ref=e496]:
+                - link "HTC Touch HD" [ref=e497] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=103
+              - generic [ref=e498]: $146.00
+          - generic [ref=e500]:
+            - generic [ref=e501]:
+              - link [ref=e503] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=102
+                - img "HTC Touch HD" [ref=e506]
+                - list [ref=e507]:
+                  - listitem [ref=e508]:
+                    - img "HTC Touch HD" [ref=e509]
+                  - listitem [ref=e510]:
+                    - img "HTC Touch HD" [ref=e511]
+                  - listitem [ref=e512]:
+                    - img "HTC Touch HD" [ref=e513]
+              - generic [ref=e514]:
+                - button "Add to Cart" [ref=e515] [cursor=pointer]
+                - button "Add to Wish List" [ref=e516] [cursor=pointer]
+                - button "Quick view" [ref=e517] [cursor=pointer]
+                - button "Compare this Product" [ref=e518] [cursor=pointer]
+            - generic [ref=e519]:
+              - heading [level=4] [ref=e520]:
+                - link "HTC Touch HD" [ref=e521] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=102
+              - generic [ref=e522]: $146.00
+          - generic [ref=e524]:
+            - generic [ref=e525]:
+              - link [ref=e527] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=101
+                - img "HTC Touch HD" [ref=e530]
+                - list [ref=e531]:
+                  - listitem [ref=e532]:
+                    - img "HTC Touch HD" [ref=e533]
+                  - listitem [ref=e534]:
+                    - img "HTC Touch HD" [ref=e535]
+                  - listitem [ref=e536]:
+                    - img "HTC Touch HD" [ref=e537]
+              - generic [ref=e538]:
+                - button "Add to Cart" [ref=e539] [cursor=pointer]
+                - button "Add to Wish List" [ref=e540] [cursor=pointer]
+                - button "Quick view" [ref=e541] [cursor=pointer]
+                - button "Compare this Product" [ref=e542] [cursor=pointer]
+            - generic [ref=e543]:
+              - heading [level=4] [ref=e544]:
+                - link "HTC Touch HD" [ref=e545] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=101
+              - generic [ref=e546]: $146.00
+          - generic [ref=e548]:
+            - generic [ref=e549]:
+              - link [ref=e551] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=100
+                - img "HTC Touch HD" [ref=e554]
+                - list [ref=e555]:
+                  - listitem [ref=e556]:
+                    - img "HTC Touch HD" [ref=e557]
+                  - listitem [ref=e558]:
+                    - img "HTC Touch HD" [ref=e559]
+                  - listitem [ref=e560]:
+                    - img "HTC Touch HD" [ref=e561]
+              - generic [ref=e562]:
+                - button "Add to Cart" [ref=e563] [cursor=pointer]
+                - button "Add to Wish List" [ref=e564] [cursor=pointer]
+                - button "Quick view" [ref=e565] [cursor=pointer]
+                - button "Compare this Product" [ref=e566] [cursor=pointer]
+            - generic [ref=e567]:
+              - heading [level=4] [ref=e568]:
+                - link "HTC Touch HD" [ref=e569] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=100
+              - generic [ref=e570]: $146.00
+          - generic [ref=e572]:
+            - generic [ref=e573]:
+              - link [ref=e575] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=99
+                - img "HP LP3065" [ref=e578]
+                - list [ref=e579]:
+                  - listitem [ref=e580]:
+                    - img "HP LP3065" [ref=e581]
+                  - listitem [ref=e582]:
+                    - img "HP LP3065" [ref=e583]
+                  - listitem [ref=e584]:
+                    - img "HP LP3065" [ref=e585]
+              - generic [ref=e586]:
+                - button "Add to Cart" [ref=e587] [cursor=pointer]
+                - button "Add to Wish List" [ref=e588] [cursor=pointer]
+                - button "Quick view" [ref=e589] [cursor=pointer]
+                - button "Compare this Product" [ref=e590] [cursor=pointer]
+            - generic [ref=e591]:
+              - heading [level=4] [ref=e592]:
+                - link "HP LP3065" [ref=e593] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=99
+              - generic [ref=e594]: $122.00
+          - generic [ref=e596]:
+            - generic [ref=e597]:
+              - link [ref=e599] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=98
+                - img "HP LP3065" [ref=e602]
+                - list [ref=e603]:
+                  - listitem [ref=e604]:
+                    - img "HP LP3065" [ref=e605]
+                  - listitem [ref=e606]:
+                    - img "HP LP3065" [ref=e607]
+                  - listitem [ref=e608]:
+                    - img "HP LP3065" [ref=e609]
+              - generic [ref=e610]:
+                - button "Add to Cart" [ref=e611] [cursor=pointer]
+                - button "Add to Wish List" [ref=e612] [cursor=pointer]
+                - button "Quick view" [ref=e613] [cursor=pointer]
+                - button "Compare this Product" [ref=e614] [cursor=pointer]
+            - generic [ref=e615]:
+              - heading [level=4] [ref=e616]:
+                - link "HP LP3065" [ref=e617] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=98
+              - generic [ref=e618]: $122.00
+      - generic [ref=e621]:
+        - heading "Latest Range of Earphones" [level=2] [ref=e622]
+        - generic [ref=e623]: Save 10% Off
+        - link "Shop Now" [ref=e624] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e626]:
+        - generic [ref=e628]:
+          - heading "Upto 30% Off on Popular Smartphones + Exchange Offers" [level=4] [ref=e629]
+          - link "SHOP NOW" [ref=e647] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e649]:
+          - generic [ref=e650]:
+            - heading "Top Collection" [level=3] [ref=e651]
+            - generic [ref=e652]:
+              - list [ref=e653]:
+                - listitem [ref=e654]:
+                  - link "Popular" [ref=e655] [cursor=pointer]:
+                    - /url: "#mz-product-tab-39218404-0"
+                - listitem [ref=e656]:
+                  - link "Latest" [ref=e657] [cursor=pointer]:
+                    - /url: "#mz-product-tab-39218404-1"
+                - listitem [ref=e658]:
+                  - link "Best seller" [ref=e659] [cursor=pointer]:
+                    - /url: "#mz-product-tab-39218404-2"
+              - generic [ref=e660]:
+                - generic [ref=e661] [cursor=pointer]
+                - generic [ref=e665] [cursor=pointer]
+          - generic [ref=e673]:
+            - generic [ref=e675]:
+              - generic [ref=e676]:
+                - link [ref=e678] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=30
+                  - img "Canon EOS 5D" [ref=e681]
+                  - list [ref=e682]:
+                    - listitem [ref=e683]:
+                      - img "Canon EOS 5D" [ref=e684]
+                    - listitem [ref=e685]:
+                      - img "Canon EOS 5D" [ref=e686]
+                    - listitem [ref=e687]:
+                      - img "Canon EOS 5D" [ref=e688]
+                - generic [ref=e689]:
+                  - button "Add to Cart" [ref=e690] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e691] [cursor=pointer]
+                  - button "Quick view" [ref=e692] [cursor=pointer]
+                  - button "Compare this Product" [ref=e693] [cursor=pointer]
+              - generic [ref=e694]:
+                - heading [level=4] [ref=e695]:
+                  - link "Canon EOS 5D" [ref=e696] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=30
+                - generic [ref=e697]: $134.00
+            - generic [ref=e699]:
+              - generic [ref=e700]:
+                - link [ref=e702] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=28
+                  - img "HTC Touch HD" [ref=e705]
+                  - list [ref=e706]:
+                    - listitem [ref=e707]:
+                      - img "HTC Touch HD" [ref=e708]
+                    - listitem [ref=e709]:
+                      - img "HTC Touch HD" [ref=e710]
+                    - listitem [ref=e711]:
+                      - img "HTC Touch HD" [ref=e712]
+                - generic [ref=e713]:
+                  - button "Add to Cart" [ref=e714] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e715] [cursor=pointer]
+                  - button "Quick view" [ref=e716] [cursor=pointer]
+                  - button "Compare this Product" [ref=e717] [cursor=pointer]
+              - generic [ref=e718]:
+                - heading [level=4] [ref=e719]:
+                  - link "HTC Touch HD" [ref=e720] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=28
+                - generic [ref=e721]: $146.00
+            - generic [ref=e723]:
+              - generic [ref=e724]:
+                - link [ref=e726] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=42
+                  - img "Apple Cinema 30\"" [ref=e729]
+                  - list [ref=e730]:
+                    - listitem [ref=e731]:
+                      - img "Apple Cinema 30\"" [ref=e732]
+                    - listitem [ref=e733]:
+                      - img "Apple Cinema 30\"" [ref=e734]
+                - generic [ref=e735]:
+                  - button "Add to Cart" [ref=e736] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e737] [cursor=pointer]
+                  - button "Quick view" [ref=e738] [cursor=pointer]
+                  - button "Compare this Product" [ref=e739] [cursor=pointer]
+              - generic [ref=e740]:
+                - heading [level=4] [ref=e741]:
+                  - link "Apple Cinema 30\"" [ref=e742] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=42
+                - generic [ref=e743]: $122.00
+            - generic [ref=e745]:
+              - generic [ref=e746]:
+                - link [ref=e748] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=47
+                  - img "HP LP3065" [ref=e751]
+                  - list [ref=e752]:
+                    - listitem [ref=e753]:
+                      - img "HP LP3065" [ref=e754]
+                    - listitem [ref=e755]:
+                      - img "HP LP3065" [ref=e756]
+                    - listitem [ref=e757]:
+                      - img "HP LP3065" [ref=e758]
+                - generic [ref=e759]:
+                  - button "Add to Cart" [ref=e760] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e761] [cursor=pointer]
+                  - button "Quick view" [ref=e762] [cursor=pointer]
+                  - button "Compare this Product" [ref=e763] [cursor=pointer]
+              - generic [ref=e764]:
+                - heading [level=4] [ref=e765]:
+                  - link "HP LP3065" [ref=e766] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=47
+                - generic [ref=e767]: $122.00
+            - generic [ref=e769]:
+              - generic [ref=e770]:
+                - link [ref=e772] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=40
+                  - img "iPhone" [ref=e775]
+                  - list [ref=e776]:
+                    - listitem [ref=e777]:
+                      - img "iPhone" [ref=e778]
+                    - listitem [ref=e779]:
+                      - img "iPhone" [ref=e780]
+                    - listitem [ref=e781]:
+                      - img "iPhone" [ref=e782]
+                - generic [ref=e783]:
+                  - button "Add to Cart" [ref=e784] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e785] [cursor=pointer]
+                  - button "Quick view" [ref=e786] [cursor=pointer]
+                  - button "Compare this Product" [ref=e787] [cursor=pointer]
+              - generic [ref=e788]:
+                - heading [level=4] [ref=e789]:
+                  - link "iPhone" [ref=e790] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=40
+                - generic [ref=e791]: $123.20
+            - generic [ref=e793]:
+              - generic [ref=e794]:
+                - link [ref=e796] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=36
+                  - img "iPod Nano" [ref=e799]
+                  - list [ref=e800]:
+                    - listitem [ref=e801]:
+                      - img "iPod Nano" [ref=e802]
+                    - listitem [ref=e803]:
+                      - img "iPod Nano" [ref=e804]
+                    - listitem [ref=e805]:
+                      - img "iPod Nano" [ref=e806]
+                - generic [ref=e807]:
+                  - button "Add to Cart" [ref=e808] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e809] [cursor=pointer]
+                  - button "Quick view" [ref=e810] [cursor=pointer]
+                  - button "Compare this Product" [ref=e811] [cursor=pointer]
+              - generic [ref=e812]:
+                - heading [level=4] [ref=e813]:
+                  - link "iPod Nano" [ref=e814] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=36
+                - generic [ref=e815]: $122.00
+            - generic [ref=e817]:
+              - generic [ref=e818]:
+                - link [ref=e820] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=29
+                  - img "Palm Treo Pro" [ref=e823]
+                  - list [ref=e824]:
+                    - listitem [ref=e825]:
+                      - img "Palm Treo Pro" [ref=e826]
+                    - listitem [ref=e827]:
+                      - img "Palm Treo Pro" [ref=e828]
+                    - listitem [ref=e829]:
+                      - img "Palm Treo Pro" [ref=e830]
+                - generic [ref=e831]:
+                  - button "Add to Cart" [ref=e832] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e833] [cursor=pointer]
+                  - button "Quick view" [ref=e834] [cursor=pointer]
+                  - button "Compare this Product" [ref=e835] [cursor=pointer]
+              - generic [ref=e836]:
+                - heading [level=4] [ref=e837]:
+                  - link "Palm Treo Pro" [ref=e838] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=29
+                - generic [ref=e839]: $337.99
+            - generic [ref=e841]:
+              - generic [ref=e842]:
+                - link [ref=e844] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=32
+                  - img "iPod Touch" [ref=e847]
+                  - list [ref=e848]:
+                    - listitem [ref=e849]:
+                      - img "iPod Touch" [ref=e850]
+                    - listitem [ref=e851]:
+                      - img "iPod Touch" [ref=e852]
+                    - listitem [ref=e853]:
+                      - img "iPod Touch" [ref=e854]
+                - generic [ref=e855]:
+                  - button "Add to Cart" [ref=e856] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e857] [cursor=pointer]
+                  - button "Quick view" [ref=e858] [cursor=pointer]
+                  - button "Compare this Product" [ref=e859] [cursor=pointer]
+              - generic [ref=e860]:
+                - heading [level=4] [ref=e861]:
+                  - link "iPod Touch" [ref=e862] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=32
+                - generic [ref=e863]: $194.00
+            - generic [ref=e865]:
+              - generic [ref=e866]:
+                - link [ref=e868] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=34
+                  - img "iPod Shuffle" [ref=e871]
+                  - list [ref=e872]:
+                    - listitem [ref=e873]:
+                      - img "iPod Shuffle" [ref=e874]
+                    - listitem [ref=e875]:
+                      - img "iPod Shuffle" [ref=e876]
+                    - listitem [ref=e877]:
+                      - img "iPod Shuffle" [ref=e878]
+                - generic [ref=e879]:
+                  - button "Add to Cart" [ref=e880] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e881] [cursor=pointer]
+                  - button "Quick view" [ref=e882] [cursor=pointer]
+                  - button "Compare this Product" [ref=e883] [cursor=pointer]
+              - generic [ref=e884]:
+                - heading [level=4] [ref=e885]:
+                  - link "iPod Shuffle" [ref=e886] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=34
+                - generic [ref=e887]: $182.00
+            - generic [ref=e889]:
+              - generic [ref=e890]:
+                - link [ref=e892] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=41
+                  - img "iMac" [ref=e895]
+                  - list [ref=e896]:
+                    - listitem [ref=e897]:
+                      - img "iMac" [ref=e898]
+                    - listitem [ref=e899]:
+                      - img "iMac" [ref=e900]
+                    - listitem [ref=e901]:
+                      - img "iMac" [ref=e902]
+                - generic [ref=e903]:
+                  - button "Add to Cart" [ref=e904] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e905] [cursor=pointer]
+                  - button "Quick view" [ref=e906] [cursor=pointer]
+                  - button "Compare this Product" [ref=e907] [cursor=pointer]
+              - generic [ref=e908]:
+                - heading [level=4] [ref=e909]:
+                  - link "iMac" [ref=e910] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=41
+                - generic [ref=e911]: $170.00
+            - generic [ref=e913]:
+              - generic [ref=e914]:
+                - link [ref=e916] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=45
+                  - img "MacBook Pro" [ref=e919]
+                  - list [ref=e920]:
+                    - listitem [ref=e921]:
+                      - img "MacBook Pro" [ref=e922]
+                    - listitem [ref=e923]:
+                      - img "MacBook Pro" [ref=e924]
+                    - listitem [ref=e925]:
+                      - img "MacBook Pro" [ref=e926]
+                - generic [ref=e927]:
+                  - button "Add to Cart" [ref=e928] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e929] [cursor=pointer]
+                  - button "Quick view" [ref=e930] [cursor=pointer]
+                  - button "Compare this Product" [ref=e931] [cursor=pointer]
+              - generic [ref=e932]:
+                - heading [level=4] [ref=e933]:
+                  - link "MacBook Pro" [ref=e934] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=45
+                - generic [ref=e935]: $2,000.00
+            - generic [ref=e937]:
+              - generic [ref=e938]:
+                - link [ref=e940] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=31
+                  - img "Nikon D300" [ref=e943]
+                  - list [ref=e944]:
+                    - listitem [ref=e945]:
+                      - img "Nikon D300" [ref=e946]
+                    - listitem [ref=e947]:
+                      - img "Nikon D300" [ref=e948]
+                    - listitem [ref=e949]:
+                      - img "Nikon D300" [ref=e950]
+                - generic [ref=e951]:
+                  - button "Add to Cart" [ref=e952] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e953] [cursor=pointer]
+                  - button "Quick view" [ref=e954] [cursor=pointer]
+                  - button "Compare this Product" [ref=e955] [cursor=pointer]
+              - generic [ref=e956]:
+                - heading [level=4] [ref=e957]:
+                  - link "Nikon D300" [ref=e958] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=31
+                - generic [ref=e959]: $98.00
+            - generic [ref=e961]:
+              - generic [ref=e962]:
+                - link [ref=e964] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=43
+                  - img "MacBook" [ref=e967]
+                  - list [ref=e968]:
+                    - listitem [ref=e969]:
+                      - img "MacBook" [ref=e970]
+                    - listitem [ref=e971]:
+                      - img "MacBook" [ref=e972]
+                    - listitem [ref=e973]:
+                      - img "MacBook" [ref=e974]
+                - generic [ref=e975]:
+                  - button "Add to Cart" [ref=e976] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e977] [cursor=pointer]
+                  - button "Quick view" [ref=e978] [cursor=pointer]
+                  - button "Compare this Product" [ref=e979] [cursor=pointer]
+              - generic [ref=e980]:
+                - heading [level=4] [ref=e981]:
+                  - link "MacBook" [ref=e982] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=43
+                - generic [ref=e983]: $602.00
+            - generic [ref=e985]:
+              - generic [ref=e986]:
+                - link [ref=e988] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=33
+                  - img "Samsung SyncMaster 941BW" [ref=e991]
+                  - list [ref=e992]:
+                    - listitem [ref=e993]:
+                      - img "Samsung SyncMaster 941BW" [ref=e994]
+                    - listitem [ref=e995]:
+                      - img "Samsung SyncMaster 941BW" [ref=e996]
+                    - listitem [ref=e997]:
+                      - img "Samsung SyncMaster 941BW" [ref=e998]
+                - generic [ref=e999]:
+                  - button "Add to Cart" [ref=e1000] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1001] [cursor=pointer]
+                  - button "Quick view" [ref=e1002] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1003] [cursor=pointer]
+              - generic [ref=e1004]:
+                - heading [level=4] [ref=e1005]:
+                  - link "Samsung SyncMaster 941BW" [ref=e1006] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=33
+                - generic [ref=e1007]: $242.00
+            - generic [ref=e1009]:
+              - generic [ref=e1010]:
+                - link [ref=e1012] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=44
+                  - img "MacBook Air" [ref=e1015]
+                  - list [ref=e1016]:
+                    - listitem [ref=e1017]:
+                      - img "MacBook Air" [ref=e1018]
+                    - listitem [ref=e1019]:
+                      - img "MacBook Air" [ref=e1020]
+                    - listitem [ref=e1021]:
+                      - img "MacBook Air" [ref=e1022]
+                - generic [ref=e1023]:
+                  - button "Add to Cart" [ref=e1024] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1025] [cursor=pointer]
+                  - button "Quick view" [ref=e1026] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1027] [cursor=pointer]
+              - generic [ref=e1028]:
+                - heading [level=4] [ref=e1029]:
+                  - link "MacBook Air" [ref=e1030] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=44
+                - generic [ref=e1031]: $1,202.00
+            - generic [ref=e1033]:
+              - generic [ref=e1034]:
+                - link [ref=e1036] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=46
+                  - img "Sony VAIO" [ref=e1039]
+                  - list [ref=e1040]:
+                    - listitem [ref=e1041]:
+                      - img "Sony VAIO" [ref=e1042]
+                    - listitem [ref=e1043]:
+                      - img "Sony VAIO" [ref=e1044]
+                    - listitem [ref=e1045]:
+                      - img "Sony VAIO" [ref=e1046]
+                - generic [ref=e1047]:
+                  - button "Add to Cart" [ref=e1048] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1049] [cursor=pointer]
+                  - button "Quick view" [ref=e1050] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1051] [cursor=pointer]
+              - generic [ref=e1052]:
+                - heading [level=4] [ref=e1053]:
+                  - link "Sony VAIO" [ref=e1054] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=46
+                - generic [ref=e1055]: $1,202.00
+            - generic [ref=e1057]:
+              - generic [ref=e1058]:
+                - link [ref=e1060] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=100
+                  - img "HTC Touch HD" [ref=e1063]
+                  - list [ref=e1064]:
+                    - listitem [ref=e1065]:
+                      - img "HTC Touch HD" [ref=e1066]
+                    - listitem [ref=e1067]:
+                      - img "HTC Touch HD" [ref=e1068]
+                    - listitem [ref=e1069]:
+                      - img "HTC Touch HD" [ref=e1070]
+                - generic [ref=e1071]:
+                  - button "Add to Cart" [ref=e1072] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1073] [cursor=pointer]
+                  - button "Quick view" [ref=e1074] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1075] [cursor=pointer]
+              - generic [ref=e1076]:
+                - heading [level=4] [ref=e1077]:
+                  - link "HTC Touch HD" [ref=e1078] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=100
+                - generic [ref=e1079]: $146.00
+            - generic [ref=e1081]:
+              - generic [ref=e1082]:
+                - link [ref=e1084] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=49
+                  - img "Samsung Galaxy Tab 10.1" [ref=e1087]
+                  - list [ref=e1088]:
+                    - listitem [ref=e1089]:
+                      - img "Samsung Galaxy Tab 10.1" [ref=e1090]
+                    - listitem [ref=e1091]:
+                      - img "Samsung Galaxy Tab 10.1" [ref=e1092]
+                    - listitem [ref=e1093]:
+                      - img "Samsung Galaxy Tab 10.1" [ref=e1094]
+                - generic [ref=e1095]:
+                  - button "Add to Cart" [ref=e1096] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1097] [cursor=pointer]
+                  - button "Quick view" [ref=e1098] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1099] [cursor=pointer]
+              - generic [ref=e1100]:
+                - heading [level=4] [ref=e1101]:
+                  - link "Samsung Galaxy Tab 10.1" [ref=e1102] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=49
+                - generic [ref=e1103]: $241.99
+            - generic [ref=e1105]:
+              - generic [ref=e1106]:
+                - link [ref=e1108] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=48
+                  - img "iPod Classic" [ref=e1111]
+                  - list [ref=e1112]:
+                    - listitem [ref=e1113]:
+                      - img "iPod Classic" [ref=e1114]
+                    - listitem [ref=e1115]:
+                      - img "iPod Classic" [ref=e1116]
+                    - listitem [ref=e1117]:
+                      - img "iPod Classic" [ref=e1118]
+                - generic [ref=e1119]:
+                  - button "Add to Cart" [ref=e1120] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1121] [cursor=pointer]
+                  - button "Quick view" [ref=e1122] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1123] [cursor=pointer]
+              - generic [ref=e1124]:
+                - heading [level=4] [ref=e1125]:
+                  - link "iPod Classic" [ref=e1126] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=48
+                - generic [ref=e1127]: $122.00
+            - generic [ref=e1129]:
+              - generic [ref=e1130]:
+                - link [ref=e1132] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=107
+                  - img "iMac" [ref=e1135]
+                  - list [ref=e1136]:
+                    - listitem [ref=e1137]:
+                      - img "iMac" [ref=e1138]
+                    - listitem [ref=e1139]:
+                      - img "iMac" [ref=e1140]
+                    - listitem [ref=e1141]:
+                      - img "iMac" [ref=e1142]
+                - generic [ref=e1143]:
+                  - button "Add to Cart" [ref=e1144] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1145] [cursor=pointer]
+                  - button "Quick view" [ref=e1146] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1147] [cursor=pointer]
+              - generic [ref=e1148]:
+                - heading [level=4] [ref=e1149]:
+                  - link "iMac" [ref=e1150] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=107
+                - generic [ref=e1151]: $170.00
+            - generic [ref=e1153]:
+              - generic [ref=e1154]:
+                - link [ref=e1156] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=50
+                  - img "Apple Cinema 30\"" [ref=e1159]
+                  - list [ref=e1160]:
+                    - listitem [ref=e1161]:
+                      - img "Apple Cinema 30\"" [ref=e1162]
+                    - listitem [ref=e1163]:
+                      - img "Apple Cinema 30\"" [ref=e1164]
+                    - listitem [ref=e1165]:
+                      - img "Apple Cinema 30\"" [ref=e1166]
+                - generic [ref=e1167]:
+                  - button "Add to Cart" [ref=e1168] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1169] [cursor=pointer]
+                  - button "Quick view" [ref=e1170] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1171] [cursor=pointer]
+              - generic [ref=e1172]:
+                - heading [level=4] [ref=e1173]:
+                  - link "Apple Cinema 30\"" [ref=e1174] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=50
+                - generic [ref=e1175]: $122.00
+            - generic [ref=e1177]:
+              - generic [ref=e1178]:
+                - link [ref=e1180] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=90
+                  - img "Apple Cinema 30\"" [ref=e1183]
+                  - list [ref=e1184]:
+                    - listitem [ref=e1185]:
+                      - img "Apple Cinema 30\"" [ref=e1186]
+                    - listitem [ref=e1187]:
+                      - img "Apple Cinema 30\"" [ref=e1188]
+                    - listitem [ref=e1189]:
+                      - img "Apple Cinema 30\"" [ref=e1190]
+                - generic [ref=e1191]:
+                  - button "Add to Cart" [ref=e1192] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1193] [cursor=pointer]
+                  - button "Quick view" [ref=e1194] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1195] [cursor=pointer]
+              - generic [ref=e1196]:
+                - heading [level=4] [ref=e1197]:
+                  - link "Apple Cinema 30\"" [ref=e1198] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=90
+                - generic [ref=e1199]: $122.00
+            - generic [ref=e1201]:
+              - generic [ref=e1202]:
+                - link [ref=e1204] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=88
+                  - img "Apple Cinema 30\"" [ref=e1207]
+                  - list [ref=e1208]:
+                    - listitem [ref=e1209]:
+                      - img "Apple Cinema 30\"" [ref=e1210]
+                    - listitem [ref=e1211]:
+                      - img "Apple Cinema 30\"" [ref=e1212]
+                    - listitem [ref=e1213]:
+                      - img "Apple Cinema 30\"" [ref=e1214]
+                - generic [ref=e1215]:
+                  - button "Add to Cart" [ref=e1216] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1217] [cursor=pointer]
+                  - button "Quick view" [ref=e1218] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1219] [cursor=pointer]
+              - generic [ref=e1220]:
+                - heading [level=4] [ref=e1221]:
+                  - link "Apple Cinema 30\"" [ref=e1222] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=88
+                - generic [ref=e1223]: $122.00
+            - generic [ref=e1225]:
+              - generic [ref=e1226]:
+                - link [ref=e1228] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=89
+                  - img "Apple Cinema 30\"" [ref=e1231]
+                  - list [ref=e1232]:
+                    - listitem [ref=e1233]:
+                      - img "Apple Cinema 30\"" [ref=e1234]
+                    - listitem [ref=e1235]:
+                      - img "Apple Cinema 30\"" [ref=e1236]
+                    - listitem [ref=e1237]:
+                      - img "Apple Cinema 30\"" [ref=e1238]
+                - generic [ref=e1239]:
+                  - button "Add to Cart" [ref=e1240] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1241] [cursor=pointer]
+                  - button "Quick view" [ref=e1242] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1243] [cursor=pointer]
+              - generic [ref=e1244]:
+                - heading [level=4] [ref=e1245]:
+                  - link "Apple Cinema 30\"" [ref=e1246] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=89
+                - generic [ref=e1247]: $122.00
+        - link [ref=e1249] [cursor=pointer]:
+          - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=32
+          - img "Apple Ipad Pro" [ref=e1251]
+        - generic [ref=e1257]:
+          - generic [ref=e1258]:
+            - heading "Under @99" [level=3] [ref=e1259]
+            - generic [ref=e1261]:
+              - generic [ref=e1262] [cursor=pointer]
+              - generic [ref=e1266] [cursor=pointer]
+          - generic [ref=e1274]:
+            - generic [ref=e1276]:
+              - generic [ref=e1277]:
+                - link [ref=e1279] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=63
+                  - img "Nikon D300" [ref=e1282]
+                  - list [ref=e1283]:
+                    - listitem [ref=e1284]:
+                      - img "Nikon D300" [ref=e1285]
+                    - listitem [ref=e1286]:
+                      - img "Nikon D300" [ref=e1287]
+                    - listitem [ref=e1288]:
+                      - img "Nikon D300" [ref=e1289]
+                - generic [ref=e1290]:
+                  - button "Add to Cart" [ref=e1291] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1292] [cursor=pointer]
+                  - button "Quick view" [ref=e1293] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1294] [cursor=pointer]
+              - generic [ref=e1295]:
+                - heading [level=4] [ref=e1296]:
+                  - link "Nikon D300" [ref=e1297] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=63
+                - generic [ref=e1298]: $98.00
+            - generic [ref=e1300]:
+              - generic [ref=e1301]:
+                - link [ref=e1303] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=31
+                  - img "Nikon D300" [ref=e1306]
+                  - list [ref=e1307]:
+                    - listitem [ref=e1308]:
+                      - img "Nikon D300" [ref=e1309]
+                    - listitem [ref=e1310]:
+                      - img "Nikon D300" [ref=e1311]
+                    - listitem [ref=e1312]:
+                      - img "Nikon D300" [ref=e1313]
+                - generic [ref=e1314]:
+                  - button "Add to Cart" [ref=e1315] [cursor=pointer]
+                  - button "Add to Wish List" [ref=e1316] [cursor=pointer]
+                  - button "Quick view" [ref=e1317] [cursor=pointer]
+                  - button "Compare this Product" [ref=e1318] [cursor=pointer]
+              - generic [ref=e1319]:
+                - heading [level=4] [ref=e1320]:
+                  - link "Nikon D300" [ref=e1321] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=31
+                - generic [ref=e1322]: $98.00
+        - heading "From The Blog" [level=3] [ref=e1324]
+        - generic [ref=e1331]:
+          - generic [ref=e1333]:
+            - link [ref=e1335] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=37
+              - img "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1336]
+            - generic [ref=e1337]:
+              - generic [ref=e1338]:
+                - link "Mark Jecno" [ref=e1340] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=3
+                - generic [ref=e1341]: "| 1501 comments"
+                - generic [ref=e1342]: "| 39346"
+                - generic [ref=e1343]: 25 Feb 2019
+              - heading [level=4] [ref=e1344]:
+                - link "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1345] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=37
+          - generic [ref=e1347]:
+            - link [ref=e1349] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=36
+              - img "eget nunc lobortis mattis aliquam faucibus purus in massa tempor" [ref=e1350]
+            - generic [ref=e1351]:
+              - generic [ref=e1352]:
+                - link "Jolio Balia" [ref=e1354] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=2
+                - generic [ref=e1355]: "| 68 comments"
+                - generic [ref=e1356]: "| 31119"
+                - generic [ref=e1357]: 25 Feb 2019
+              - heading [level=4] [ref=e1358]:
+                - link "eget nunc lobortis mattis aliquam faucibus purus in massa tempor" [ref=e1359] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=36
+          - generic [ref=e1361]:
+            - link [ref=e1363] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=35
+              - img "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1364]
+            - generic [ref=e1365]:
+              - generic [ref=e1366]:
+                - link "Mark Jecno" [ref=e1368] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=3
+                - generic [ref=e1369]: "| 58 comments"
+                - generic [ref=e1370]: "| 10884"
+                - generic [ref=e1371]: 25 Feb 2019
+              - heading [level=4] [ref=e1372]:
+                - link "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1373] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=35
+          - generic [ref=e1375]:
+            - link [ref=e1378] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=33
+              - img "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1380]
+            - generic [ref=e1381]:
+              - generic [ref=e1382]:
+                - link "Mark Jecno" [ref=e1384] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=3
+                - generic [ref=e1385]: "| 25 comments"
+                - generic [ref=e1386]: "| 10691"
+                - generic [ref=e1387]: 25 Feb 2019
+              - heading [level=4] [ref=e1388]:
+                - link "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1389] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=33
+          - generic [ref=e1391]:
+            - link [ref=e1393] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=31
+              - img "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1394]
+            - generic [ref=e1395]:
+              - generic [ref=e1396]:
+                - link "Mark Jecno" [ref=e1398] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=3
+                - generic [ref=e1399]: "| 127 comments"
+                - generic [ref=e1400]: "| 11045"
+                - generic [ref=e1401]: 25 Feb 2019
+              - heading [level=4] [ref=e1402]:
+                - link "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1403] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=31
+          - generic [ref=e1405]:
+            - link [ref=e1407] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=30
+              - img "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" [ref=e1408]
+            - generic [ref=e1409]:
+              - generic [ref=e1410]:
+                - link "Jolio Balia" [ref=e1412] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=2
+                - generic [ref=e1413]: "| 80 comments"
+                - generic [ref=e1414]: "| 10384"
+                - generic [ref=e1415]: 25 Feb 2019
+              - heading [level=4] [ref=e1416]:
+                - link "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" [ref=e1417] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=30
+          - generic [ref=e1419]:
+            - link [ref=e1421] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=29
+              - img "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1422]
+            - generic [ref=e1423]:
+              - generic [ref=e1424]:
+                - link "Mark Jecno" [ref=e1426] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=3
+                - generic [ref=e1427]: "| 4 comments"
+                - generic [ref=e1428]: "| 10981"
+                - generic [ref=e1429]: 25 Feb 2019
+              - heading [level=4] [ref=e1430]:
+                - link "amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus" [ref=e1431] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=29
+          - generic [ref=e1433]:
+            - link [ref=e1435] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=24
+              - img "eget nunc lobortis mattis aliquam faucibus purus in massa tempor" [ref=e1436]
+            - generic [ref=e1437]:
+              - generic [ref=e1438]:
+                - link "Jolio Balia" [ref=e1440] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=2
+                - generic [ref=e1441]: "| 14 comments"
+                - generic [ref=e1442]: "| 10046"
+                - generic [ref=e1443]: 25 Feb 2019
+              - heading [level=4] [ref=e1444]:
+                - link "eget nunc lobortis mattis aliquam faucibus purus in massa tempor" [ref=e1445] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=24
+          - generic [ref=e1447]:
+            - link [ref=e1449] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=22
+              - img "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" [ref=e1450]
+            - generic [ref=e1451]:
+              - generic [ref=e1452]:
+                - link "Jolio Balia" [ref=e1454] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=2
+                - generic [ref=e1455]: "| 3 comments"
+                - generic [ref=e1456]: "| 10012"
+                - generic [ref=e1457]: 25 Feb 2019
+              - heading [level=4] [ref=e1458]:
+                - link "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" [ref=e1459] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=22
+          - generic [ref=e1461]:
+            - link [ref=e1464] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=16
+              - img "eget nunc lobortis mattis aliquam faucibus purus in massa tempor" [ref=e1466]
+            - generic [ref=e1467]:
+              - generic [ref=e1468]:
+                - link "Jolio Balia" [ref=e1470] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/author&author_id=2
+                - generic [ref=e1471]: "| 0 comments"
+                - generic [ref=e1472]: "| 10460"
+                - generic [ref=e1473]: 25 Feb 2019
+              - heading [level=4] [ref=e1474]:
+                - link "eget nunc lobortis mattis aliquam faucibus purus in massa tempor" [ref=e1475] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/article&article_id=16
+    - contentinfo [ref=e1477]:
+      - paragraph [ref=e1483]: © LambdaTest - Powered by OpenCart
+```
+
+# Test source
+
+```ts
+  1  | import type { Page } from '@playwright/test';
+  2  | import { createLogger, type Logger } from '../utils';
+  3  | 
+  4  | /**
+  5  |  * Base class for all page objects.
+  6  |  *
+  7  |  * Provides navigation and logging. It deliberately contains no business
+  8  |  * assertions — those belong in tests.
+  9  |  */
+  10 | export abstract class BasePage {
+  11 |   protected readonly log: Logger;
+  12 | 
+  13 |   constructor(protected readonly page: Page) {
+  14 |     this.log = createLogger(this.constructor.name);
+  15 |   }
+  16 | 
+  17 |   /**
+  18 |    * Navigate to a relative URL (resolved against Playwright `baseURL`).
+  19 |    *
+  20 |    * Waits for `domcontentloaded` rather than the full `load` event: the demo
+  21 |    * site pulls many third-party assets, so waiting for `load` makes navigation
+  22 |    * flaky. Element assertions provide the real synchronization afterwards.
+  23 |    */
+  24 |   async goto(url: string): Promise<void> {
+  25 |     this.log.info(`Open ${url}`);
+> 26 |     await this.page.goto(url, { waitUntil: 'domcontentloaded' });
+     |                     ^ TimeoutError: page.goto: Timeout 30000ms exceeded.
+  27 |   }
+  28 | }
+  29 | 
+```

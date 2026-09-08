@@ -1,0 +1,1 @@
+{"attachments":[],"errors":[{"message":"beforeEach hook failed: Error: Test is skipped: Set TEST_USER_EMAIL and TEST_USER_PASSWORD","trace":"Error: Test is skipped: Set TEST_USER_EMAIL and TEST_USER_PASSWORD\n    at /home/yaqoob/Documents/Ecommerce-playground-lambdatest/tests/session/session.spec.ts:12:10","timestamp":1790588487145}]}

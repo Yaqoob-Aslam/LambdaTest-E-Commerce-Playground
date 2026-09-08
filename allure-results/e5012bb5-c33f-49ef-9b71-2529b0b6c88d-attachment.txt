@@ -1,0 +1,1 @@
+[2026-09-27T07:55:06.965Z] [INFO] [AccountPage] Open /index.php?route=account/account

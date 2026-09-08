@@ -1,0 +1,2 @@
+[2026-09-28T10:43:12.177Z] [INFO] [LoginPage] Open /index.php?route=account/login
+[2026-09-28T10:43:15.963Z] [INFO] [CartPage] Open /index.php?route=checkout/cart

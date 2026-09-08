@@ -1,0 +1,1 @@
+[2026-09-28T06:12:14.639Z] [INFO] [ForgottenPasswordPage] Open /index.php?route=account/forgotten

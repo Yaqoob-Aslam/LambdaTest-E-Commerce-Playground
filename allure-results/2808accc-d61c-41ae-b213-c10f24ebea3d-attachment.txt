@@ -1,0 +1,1 @@
+[2026-09-28T09:38:42.612Z] [INFO] [SearchPage] Open /index.php?route=product/search&search=i

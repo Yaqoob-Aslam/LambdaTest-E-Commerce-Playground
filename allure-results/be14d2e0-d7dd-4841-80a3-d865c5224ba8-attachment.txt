@@ -1,0 +1,2 @@
+[2026-09-28T06:13:54.228Z] [INFO] [ProductDetailsPage] Open /index.php?route=product/product&product_id=41
+[2026-09-28T06:14:03.548Z] [INFO] [CartPage] Open /index.php?route=checkout/cart

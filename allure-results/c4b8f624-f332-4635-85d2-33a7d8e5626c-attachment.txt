@@ -1,0 +1,2 @@
+[2026-09-28T09:42:14.763Z] [INFO] [LoginPage] Open /index.php?route=account/login
+[2026-09-28T09:42:20.098Z] [INFO] [ProductDetailsPage] Open /index.php?route=product/product&product_id=41

@@ -1,0 +1,1 @@
+[2026-09-27T09:51:02.754Z] [INFO] [CheckoutPage] Open /index.php?route=checkout/checkout

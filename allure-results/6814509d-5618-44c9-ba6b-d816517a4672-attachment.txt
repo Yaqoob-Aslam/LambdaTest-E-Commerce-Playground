@@ -1,0 +1,2 @@
+[2026-09-28T09:47:30.969Z] [INFO] [LoginPage] Open /index.php?route=account/login
+[2026-09-28T09:47:36.291Z] [INFO] [RegisterPage] Open /index.php?route=account/register

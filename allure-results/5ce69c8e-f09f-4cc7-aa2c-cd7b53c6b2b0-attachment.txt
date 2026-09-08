@@ -1,0 +1,1 @@
+[2026-09-28T10:41:41.941Z] [INFO] [SearchPage] Open /index.php?route=product/search&search=Mac&sort=p.price&order=ASC

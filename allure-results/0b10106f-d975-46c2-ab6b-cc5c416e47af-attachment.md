@@ -1,0 +1,236 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: authentication/forgotten-password.spec.ts >> Authentication — Password Recovery >> TC_AUTH_019_Forgot_Password_Empty_Email_Is_Rejected
+- Location: tests/authentication/forgotten-password.spec.ts:5:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - heading "Top categories close" [level=5] [ref=f1e4]:
+      - text: Top categories
+      - link "close":
+        - /url: "#mz-component-1626147655"
+    - navigation [ref=f1e7]:
+      - list [ref=f1e9]:
+        - listitem [ref=f1e10]:
+          - link "Components" [ref=f1e11] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=25
+        - listitem [ref=f1e17]:
+          - link "Cameras" [ref=f1e18] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33
+        - listitem [ref=f1e24]:
+          - link "Phone, Tablets & Ipod" [ref=f1e25] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57
+        - listitem [ref=f1e31]:
+          - link "Software" [ref=f1e32] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+        - listitem [ref=f1e38]:
+          - link "MP3 Players" [ref=f1e39] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=34
+        - listitem [ref=f1e45]:
+          - link "Laptops & Notebooks" [ref=f1e46] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18
+        - listitem [ref=f1e52]:
+          - link "Desktops and Monitors" [ref=f1e53] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=28
+        - listitem [ref=f1e59]:
+          - link "Printers & Scanners" [ref=f1e60] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=30
+        - listitem [ref=f1e66]:
+          - link "Mice and Trackballs" [ref=f1e67] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=29
+        - listitem [ref=f1e73]:
+          - link "Fashion and Accessories" [ref=f1e74] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e80]:
+          - link "Beauty and Saloon" [ref=f1e81] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e87]:
+          - link "Autoparts and Accessories" [ref=f1e88] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e93]:
+          - link "Washing machine" [ref=f1e94] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e99]:
+          - link "Gaming consoles" [ref=f1e100] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e105]:
+          - link "Air conditioner" [ref=f1e106] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=f1e111]:
+          - link "Web Cameras" [ref=f1e112] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=32
+  - generic [ref=f1e117]:
+    - heading "Quick Links close" [level=5] [ref=f1e118]:
+      - text: Quick Links
+      - link "close":
+        - /url: "#mz-component-162614767"
+    - generic [ref=f1e119]:
+      - navigation [ref=f1e121]:
+        - list [ref=f1e123]:
+          - listitem [ref=f1e124]:
+            - link "Special Hot" [ref=f1e125] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+              - generic [ref=f1e126]: Special
+              - generic [ref=f1e128]: Hot
+          - listitem [ref=f1e129]:
+            - link "Wishlist" [ref=f1e130] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+          - listitem [ref=f1e133]:
+            - link "Compare" [ref=f1e134] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+          - listitem [ref=f1e137]:
+            - link "My account" [ref=f1e138] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+          - listitem [ref=f1e141]:
+            - link "Blog" [ref=f1e142] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+          - listitem [ref=f1e145]:
+            - link "Tracking" [ref=f1e146] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/tracking
+          - listitem [ref=f1e149]:
+            - link "Contact us" [ref=f1e150] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/contact
+      - separator [ref=f1e154]
+      - paragraph [ref=f1e157]: Place here any module, widget, design or HTML. for example menu, categories
+  - generic [ref=f1e158]:
+    - heading "Cart close" [level=5] [ref=f1e159]:
+      - text: Cart
+      - link "close":
+        - /url: "#cart-total-drawer"
+    - generic [ref=f1e160]:
+      - generic [ref=f1e161]:
+        - paragraph [ref=f1e162]: Your shopping cart is empty!
+        - table [ref=f1e163]:
+          - rowgroup [ref=f1e164]:
+            - row [ref=f1e165]:
+              - cell "Sub-Total:" [ref=f1e166]
+              - cell [ref=f1e167]:
+                - strong [ref=f1e168]: $0.00
+            - row [ref=f1e169]:
+              - cell "Total:" [ref=f1e170]
+              - cell [ref=f1e171]:
+                - strong [ref=f1e172]: $0.00
+      - generic [ref=f1e174]:
+        - button "Edit cart" [ref=f1e176] [cursor=pointer]
+        - button "Checkout" [ref=f1e178] [cursor=pointer]
+  - generic [ref=f1e179]:
+    - banner [ref=f1e180]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button
+      - generic [ref=f1e182]:
+        - figure [ref=f1e184]:
+          - link [ref=f1e185] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+            - img "Poco Electro" [ref=f1e186]
+        - generic [ref=f1e190]:
+          - generic [ref=f1e192]:
+            - button "All Categories" [ref=f1e194] [cursor=pointer]
+            - textbox "Search For Products" [ref=f1e196]
+          - button "Search" [ref=f1e198] [cursor=pointer]
+        - link "Compare" [ref=f1e200] [cursor=pointer]:
+          - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+        - link "Wishlist" [ref=f1e205] [cursor=pointer]:
+          - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+        - button "0" [ref=f1e210] [cursor=pointer]
+      - generic [ref=f1e216]:
+        - generic [ref=f1e218] [cursor=pointer]:
+          - button "Shop by Category" [ref=f1e220]
+          - navigation [ref=f1e225]:
+            - list [ref=f1e227]:
+              - listitem [ref=f1e228]:
+                - link "Home" [ref=f1e229]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+              - listitem [ref=f1e232]:
+                - link "Special Hot" [ref=f1e233]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                  - generic [ref=f1e234]: Special
+                  - generic [ref=f1e236]: Hot
+              - listitem [ref=f1e237]:
+                - link "Blog" [ref=f1e238]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+              - listitem [ref=f1e241]:
+                - button "Mega Menu" [ref=f1e242]
+              - listitem [ref=f1e245]:
+                - button "AddOns Featured" [ref=f1e246]:
+                  - generic [ref=f1e247]: AddOns
+                  - generic [ref=f1e249]: Featured
+              - listitem [ref=f1e250]:
+                - button "My account" [ref=f1e251]
+        - text: 
+        - paragraph [ref=f1e256]:
+          - strong [ref=f1e257]: This is a dummy website for Web Automation Testing
+    - generic [ref=f1e258]:
+      - navigation "breadcrumb" [ref=f1e259]:
+        - list [ref=f1e260]:
+          - listitem:
+            - link:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+          - listitem [ref=f1e261]:
+            - text: /
+            - link "Account" [ref=f1e262] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+          - listitem [ref=f1e263]: / Forgotten Password
+      - generic [ref=f1e264]: "Warning: The E-Mail Address was not found in our records, please try again!"
+      - generic [ref=f1e265]:
+        - generic [ref=f1e266]:
+          - heading "Forgot Your Password?" [level=1] [ref=f1e267]
+          - paragraph [ref=f1e268]: Enter the e-mail address associated with your account. Click submit to have a password reset link e-mailed to you.
+          - generic [ref=f1e269]:
+            - group "Your E-Mail Address" [ref=f1e270]:
+              - generic [ref=f1e272]:
+                - generic [ref=f1e273]: E-Mail Address*
+                - textbox "E-Mail Address*" [ref=f1e275]:
+                  - /placeholder: E-Mail Address
+            - generic [ref=f1e276]:
+              - link "Back" [ref=f1e278] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/login
+              - button "Continue" [ref=f1e280] [cursor=pointer]
+        - complementary [ref=f1e281]:
+          - generic [ref=f1e282]:
+            - link "Login" [ref=f1e283] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/login
+            - link "Register" [ref=f1e284] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/register
+            - link "Forgotten Password" [ref=f1e285] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/forgotten
+            - link "My Account" [ref=f1e286] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+            - link "Address Book" [ref=f1e287] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/address
+            - link "Wish List" [ref=f1e288] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+            - link "Order History" [ref=f1e289] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/order
+            - link "Downloads" [ref=f1e290] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/download
+            - link "Recurring payments" [ref=f1e291] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/recurring
+            - link "Reward Points" [ref=f1e292] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/reward
+            - link "Returns" [ref=f1e293] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/return
+            - link "Transactions" [ref=f1e294] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/transaction
+            - link "Newsletter" [ref=f1e295] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/newsletter
+    - contentinfo [ref=f1e296]:
+      - paragraph [ref=f1e302]: © LambdaTest - Powered by OpenCart
+```

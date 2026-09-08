@@ -1,0 +1,1 @@
+[2026-09-26T12:47:29.161Z] [INFO] [WishlistPage] Open /index.php?route=account/wishlist

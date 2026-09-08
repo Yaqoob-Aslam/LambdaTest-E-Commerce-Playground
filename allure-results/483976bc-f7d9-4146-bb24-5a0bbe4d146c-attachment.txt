@@ -1,0 +1,1 @@
+[2026-09-28T10:40:59.022Z] [INFO] [CategoryPage] Open /index.php?route=product/category&path=18&page=1

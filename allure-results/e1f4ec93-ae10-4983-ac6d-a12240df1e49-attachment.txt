@@ -1,0 +1,1 @@
+[2026-09-28T10:41:08.973Z] [INFO] [SearchPage] Open /index.php?route=product/search&search=imac

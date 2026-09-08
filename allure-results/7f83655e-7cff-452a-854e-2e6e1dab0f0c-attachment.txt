@@ -1,0 +1,2 @@
+[2026-09-28T09:39:09.368Z] [INFO] [ProductDetailsPage] Open /index.php?route=product/product&product_id=28
+[2026-09-28T09:39:20.922Z] [INFO] [ComparePage] Open /index.php?route=product/compare

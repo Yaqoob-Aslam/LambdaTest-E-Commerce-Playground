@@ -1,0 +1,1 @@
+[2026-09-28T09:37:01.591Z] [INFO] [InformationPage] Open /index.php?route=information/tracking

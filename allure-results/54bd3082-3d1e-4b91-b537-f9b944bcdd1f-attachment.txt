@@ -1,0 +1,1 @@
+[2026-09-27T08:11:55.875Z] [INFO] [CartPage] Open /index.php?route=checkout/cart

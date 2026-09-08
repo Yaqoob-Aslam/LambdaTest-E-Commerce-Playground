@@ -1,0 +1,568 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: products/product-details.spec.ts >> Products — Detail Page >> TC_PRODUCT_001_Open_Product_Details
+- Location: tests/products/product-details.spec.ts:5:7
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+TimeoutError: page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=41", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - heading [level=5] [ref=e4]:
+        - text: Top categories
+        - link "close" [ref=e5] [cursor=pointer]:
+          - /url: "#mz-component-1626147655"
+          - text: 
+      - navigation [ref=e8]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Components" [ref=e12] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=25
+          - listitem [ref=e18]:
+            - link "Cameras" [ref=e19] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33
+          - listitem [ref=e25]:
+            - link "Phone, Tablets & Ipod" [ref=e26] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=57
+          - listitem [ref=e32]:
+            - link "Software" [ref=e33] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+          - listitem [ref=e39]:
+            - link "MP3 Players" [ref=e40] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=34
+          - listitem [ref=e46]:
+            - link "Laptops & Notebooks" [ref=e47] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=18
+          - listitem [ref=e53]:
+            - link "Desktops and Monitors" [ref=e54] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=28
+          - listitem [ref=e60]:
+            - link "Printers & Scanners" [ref=e61] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=30
+          - listitem [ref=e67]:
+            - link "Mice and Trackballs" [ref=e68] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=29
+          - listitem [ref=e74]:
+            - link "Fashion and Accessories" [ref=e75] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e81]:
+            - link "Beauty and Saloon" [ref=e82] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e88]:
+            - link "Autoparts and Accessories" [ref=e89] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e95]:
+            - link "Washing machine" [ref=e96] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e102]:
+            - link "Gaming consoles" [ref=e103] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e109]:
+            - link "Air conditioner" [ref=e110] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e116]:
+            - link "Web Cameras" [ref=e117] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=32
+    - generic [ref=e123]:
+      - heading [level=5] [ref=e124]:
+        - text: Quick Links
+        - link "close" [ref=e125] [cursor=pointer]:
+          - /url: "#mz-component-162614767"
+          - text: 
+      - generic [ref=e126]:
+        - navigation [ref=e128]:
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link " Special Hot" [ref=e132] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                - generic [ref=e133]: 
+                - generic [ref=e134]: Special
+                - generic [ref=e136]: Hot
+            - listitem [ref=e137]:
+              - link " Wishlist" [ref=e138] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+                - generic [ref=e139]: 
+                - generic [ref=e140]: Wishlist
+            - listitem [ref=e142]:
+              - link " Compare" [ref=e143] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+                - generic [ref=e144]: 
+                - generic [ref=e145]: Compare
+            - listitem [ref=e147]:
+              - link " My account" [ref=e148] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/account
+                - generic [ref=e149]: 
+                - generic [ref=e150]: My account
+            - listitem [ref=e152]:
+              - link " Blog" [ref=e153] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+                - generic [ref=e154]: 
+                - generic [ref=e155]: Blog
+            - listitem [ref=e157]:
+              - link " Tracking" [ref=e158] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/tracking
+                - generic [ref=e159]: 
+                - generic [ref=e160]: Tracking
+            - listitem [ref=e162]:
+              - link " Contact us" [ref=e163] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=information/contact
+                - generic [ref=e164]: 
+                - generic [ref=e165]: Contact us
+        - separator [ref=e168]
+        - paragraph [ref=e171]: Place here any module, widget, design or HTML. for example menu, categories
+    - generic [ref=e172]:
+      - heading [level=5] [ref=e173]:
+        - text: Cart
+        - link "close" [ref=e174] [cursor=pointer]:
+          - /url: "#cart-total-drawer"
+          - text: 
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - paragraph [ref=e177]: Your shopping cart is empty!
+          - table [ref=e178]:
+            - rowgroup [ref=e179]:
+              - row [ref=e180]:
+                - cell "Sub-Total:" [ref=e181]
+                - cell [ref=e182]:
+                  - strong [ref=e183]: $0.00
+              - row [ref=e184]:
+                - cell "Total:" [ref=e185]
+                - cell [ref=e186]:
+                  - strong [ref=e187]: $0.00
+        - generic [ref=e189]:
+          - button " Edit cart" [ref=e191] [cursor=pointer]:
+            - generic [ref=e192]: 
+            - text: Edit cart
+          - button " Checkout" [ref=e194] [cursor=pointer]:
+            - generic [ref=e195]: 
+            - text: Checkout
+    - text: 
+    - generic:    
+    - text:  
+    - generic [ref=e196]:
+      - banner [ref=e197]:
+        - button "" [ref=e199] [cursor=pointer]
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - figure [ref=e204]:
+              - link [ref=e205] [cursor=pointer]:
+                - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                - img "Poco Electro" [ref=e206]
+            - generic [ref=e210]:
+              - generic [ref=e212]:
+                - button "All Categories" [ref=e214] [cursor=pointer]
+                - textbox "Search For Products" [ref=e216]
+              - button "Search" [ref=e218] [cursor=pointer]
+            - link "Compare" [ref=e220] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/compare
+            - link "Wishlist" [ref=e225] [cursor=pointer]:
+              - /url: https://ecommerce-playground.lambdatest.io/index.php?route=account/wishlist
+            - button "0" [ref=e230] [cursor=pointer]
+          - text: 
+        - generic [ref=e236]:
+          - generic [ref=e238] [cursor=pointer]:
+            - button "Shop by Category" [ref=e240]
+            - navigation [ref=e245]:
+              - list [ref=e247]:
+                - listitem [ref=e248]:
+                  - link "Home" [ref=e249]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                - listitem [ref=e252]:
+                  - link "Special Hot" [ref=e253]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/special
+                    - generic [ref=e254]: Special
+                    - generic [ref=e256]: Hot
+                - listitem [ref=e257]:
+                  - link "Blog" [ref=e258]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=extension/maza/blog/home
+                - listitem [ref=e261]:
+                  - button "Mega Menu" [ref=e262]
+                - listitem [ref=e265]:
+                  - button "AddOns Featured" [ref=e266]:
+                    - generic [ref=e267]: AddOns
+                    - generic [ref=e269]: Featured
+                - listitem [ref=e270]:
+                  - button " My account" [ref=e271]:
+                    - generic [ref=e272]: 
+                    - generic [ref=e273]: My account
+          - text:  
+          - paragraph [ref=e277]:
+            - strong [ref=e278]: This is a dummy website for Web Automation Testing
+      - generic [ref=e279]:
+        - figure [ref=e283]:
+          - link [ref=e284] [cursor=pointer]:
+            - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=42
+            - img "Apple Cinema 30\"" [ref=e285]
+        - generic [ref=e287]:
+          - navigation "breadcrumb" [ref=e289]:
+            - list [ref=e290]:
+              - listitem [ref=e291]:
+                - link "Home" [ref=e292] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=common/home
+                  - generic [ref=e293]: 
+              - listitem [ref=e294]:
+                - text: /
+                - link "Software" [ref=e295] [cursor=pointer]:
+                  - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=17
+              - listitem [ref=e296]: / iMac
+          - generic [ref=e297]:
+            - generic [ref=e298]:
+              - generic [ref=e300]:
+                - generic [ref=e301]:
+                  - button "" [ref=e302] [cursor=pointer]
+                  - link [ref=e304] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/10-500x500.webp
+                    - img "iMac" [ref=e305]
+                - generic [ref=e307]:
+                  - generic [ref=e308]:
+                    - group "1 / 5" [ref=e309]:
+                      - link "" [ref=e310] [cursor=pointer]:
+                        - /url: https://www.youtube.com/embed/wGixQPuG1GY
+                    - group "2 / 5" [ref=e312]:
+                      - link [ref=e313] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/13-500x500.webp
+                        - img "iMac" [ref=e314]
+                    - group "3 / 5" [ref=e315]:
+                      - link [ref=e316] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/15-500x500.webp
+                        - img "iMac" [ref=e317]
+                    - group "4 / 5" [ref=e318]:
+                      - link [ref=e319] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/7-500x500.webp
+                        - img "iMac" [ref=e320]
+                    - group "5 / 5" [ref=e321]:
+                      - link [ref=e322] [cursor=pointer]:
+                        - /url: https://ecommerce-playground.lambdatest.io/image/cache/catalog/maza/demo/mz_poco/megastore-2/product/7-500x500.webp
+                        - img "iMac" [ref=e323]
+                  - text: 
+                  - button "Next slide" [ref=e324]:
+                    - generic [ref=e325]: 
+                  - text:  
+              - text:       
+              - generic [ref=e326]:
+                - tablist [ref=e329]:
+                  - listitem [ref=e330]:
+                    - tab "Description" [selected] [ref=e331] [cursor=pointer]
+                  - listitem [ref=e332]:
+                    - tab "Reviews" [ref=e333] [cursor=pointer]
+                  - listitem [ref=e334]:
+                    - tab "Custom" [ref=e335] [cursor=pointer]
+                - generic [ref=e336]: Just when you thought iMac had everything, now there´s even more. More powerful Intel Core 2 Duo processors. And more memory standard. Combine this with Mac OS X Leopard and iLife ´08, and it´s more all-in-one than ever. iMac packs amazing performance into a stunningly slim space.
+            - generic [ref=e341]:
+              - heading "iMac" [level=1] [ref=e343]
+              - list [ref=e347]:
+                - listitem [ref=e348]: "Product Code: Product 14"
+              - separator [ref=e350]
+              - generic [ref=e352]:
+                - list [ref=e354]:
+                  - listitem [ref=e355]:
+                    - text: "Brand:"
+                    - link "Apple" [ref=e356] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/manufacturer/info&manufacturer_id=8
+                  - listitem [ref=e357]: "Viewed: 91775"
+                  - listitem [ref=e358]:
+                    - text: "Availability:"
+                    - generic [ref=e359]: In Stock
+                - figure [ref=e361]:
+                  - link [ref=e362] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/manufacturer/info&manufacturer_id=8
+                    - img "Apple" [ref=e363]
+              - separator [ref=e365]
+              - generic [ref=e370]:
+                - heading "$170.00" [level=3] [ref=e371]
+                - generic [ref=e372] [cursor=pointer]: 
+              - generic [ref=e375]:
+                - generic [ref=e377]:
+                  - generic [ref=e379] [cursor=pointer]:
+                    - button "Decrease quantity" [ref=e381]:
+                      - generic [ref=e382]: 
+                    - spinbutton "Qty" [ref=e383]: "1"
+                    - button "Increase quantity" [ref=e385]:
+                      - generic [ref=e386]: 
+                  - button "Add to Cart" [ref=e388] [cursor=pointer]
+                  - button "Buy now" [ref=e390] [cursor=pointer]
+                - button " Compare this Product" [ref=e392] [cursor=pointer]:
+                  - generic [ref=e393]:
+                    - generic [ref=e394]: 
+                    - text: 
+                  - text: Compare this Product
+              - generic [ref=e396]:
+                - button "Size chart" [ref=e398] [cursor=pointer]:
+                  - generic [ref=e399]: 
+                  - text: Size chart
+                - button "Popup" [ref=e401] [cursor=pointer]:
+                  - generic [ref=e402]: 
+                  - text: Popup
+                - button "Ask Question" [ref=e404] [cursor=pointer]:
+                  - generic [ref=e405]: 
+                  - text: Ask Question
+              - separator [ref=e407]
+              - generic [ref=e409]:
+                - heading "Online payment" [level=5] [ref=e419]
+                - heading "Easy Return" [level=5] [ref=e428]
+                - heading "24x7 Service" [level=5] [ref=e439]
+              - generic [ref=e441]:
+                - generic [ref=e442]:
+                  - generic [ref=e443]: 0/50 reviews
+                  - generic [ref=e444]:
+                    - generic [ref=e445] [cursor=pointer]: ★ 5
+                    - generic [ref=e446] [cursor=pointer]: ★ 4
+                    - generic [ref=e447] [cursor=pointer]: ★ 3
+                    - generic [ref=e448] [cursor=pointer]: ★ 2
+                    - generic [ref=e449] [cursor=pointer]: ★ 1
+                    - generic [ref=e450] [cursor=pointer]: ★ 0
+                - heading "Write a review" [level=5] [ref=e451]
+                - textbox "Your Name" [ref=e453]
+                - textbox "Your Review" [ref=e455]
+                - button "Write Review" [ref=e458] [cursor=pointer]
+          - generic [ref=e459]:
+            - heading "Related Products" [level=3] [ref=e460]
+            - generic [ref=e461]:
+              - generic [ref=e463]:
+                - generic [ref=e464]:
+                  - link [ref=e466] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=42
+                    - img "Apple Cinema 30&quot;" [ref=e469]
+                    - list [ref=e470]:
+                      - listitem [ref=e471]:
+                        - img "Apple Cinema 30&quot;" [ref=e472]
+                      - listitem [ref=e473]:
+                        - img "Apple Cinema 30&quot;" [ref=e474]
+                  - generic [ref=e475]:
+                    - button "" [ref=e476] [cursor=pointer]
+                    - button "" [ref=e478] [cursor=pointer]
+                    - button "" [ref=e480] [cursor=pointer]
+                    - button "" [ref=e482] [cursor=pointer]
+                - generic [ref=e484]:
+                  - heading [level=4] [ref=e485]:
+                    - link "Apple Cinema 30\"" [ref=e486] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=42
+                  - generic [ref=e487]: $122.00
+              - generic [ref=e489]:
+                - generic [ref=e490]:
+                  - link [ref=e492] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=50
+                    - img "Apple Cinema 30&quot;" [ref=e495]
+                    - list [ref=e496]:
+                      - listitem [ref=e497]:
+                        - img "Apple Cinema 30&quot;" [ref=e498]
+                      - listitem [ref=e499]:
+                        - img "Apple Cinema 30&quot;" [ref=e500]
+                      - listitem [ref=e501]:
+                        - img "Apple Cinema 30&quot;" [ref=e502]
+                  - generic [ref=e503]:
+                    - button "" [ref=e504] [cursor=pointer]
+                    - button "" [ref=e506] [cursor=pointer]
+                    - button "" [ref=e508] [cursor=pointer]
+                    - button "" [ref=e510] [cursor=pointer]
+                - generic [ref=e512]:
+                  - heading [level=4] [ref=e513]:
+                    - link "Apple Cinema 30\"" [ref=e514] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=50
+                  - generic [ref=e515]: $122.00
+              - generic [ref=e517]:
+                - generic [ref=e518]:
+                  - link [ref=e520] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=68
+                    - img "Apple Cinema 30&quot;" [ref=e523]
+                    - list [ref=e524]:
+                      - listitem [ref=e525]:
+                        - img "Apple Cinema 30&quot;" [ref=e526]
+                      - listitem [ref=e527]:
+                        - img "Apple Cinema 30&quot;" [ref=e528]
+                      - listitem [ref=e529]:
+                        - img "Apple Cinema 30&quot;" [ref=e530]
+                  - generic [ref=e531]:
+                    - button "" [ref=e532] [cursor=pointer]
+                    - button "" [ref=e534] [cursor=pointer]
+                    - button "" [ref=e536] [cursor=pointer]
+                    - button "" [ref=e538] [cursor=pointer]
+                - generic [ref=e540]:
+                  - heading [level=4] [ref=e541]:
+                    - link "Apple Cinema 30\"" [ref=e542] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=68
+                  - generic [ref=e543]: $122.00
+              - generic [ref=e545]:
+                - generic [ref=e546]:
+                  - link [ref=e548] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=69
+                    - img "Apple Cinema 30&quot;" [ref=e551]
+                    - list [ref=e552]:
+                      - listitem [ref=e553]:
+                        - img "Apple Cinema 30&quot;" [ref=e554]
+                      - listitem [ref=e555]:
+                        - img "Apple Cinema 30&quot;" [ref=e556]
+                      - listitem [ref=e557]:
+                        - img "Apple Cinema 30&quot;" [ref=e558]
+                  - generic [ref=e559]:
+                    - button "" [ref=e560] [cursor=pointer]
+                    - button "" [ref=e562] [cursor=pointer]
+                    - button "" [ref=e564] [cursor=pointer]
+                    - button "" [ref=e566] [cursor=pointer]
+                - generic [ref=e568]:
+                  - heading [level=4] [ref=e569]:
+                    - link "Apple Cinema 30\"" [ref=e570] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=69
+                  - generic [ref=e571]: $122.00
+              - generic [ref=e573]:
+                - generic [ref=e574]:
+                  - link [ref=e576] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=88
+                    - img "Apple Cinema 30&quot;" [ref=e579]
+                    - list [ref=e580]:
+                      - listitem [ref=e581]:
+                        - img "Apple Cinema 30&quot;" [ref=e582]
+                      - listitem [ref=e583]:
+                        - img "Apple Cinema 30&quot;" [ref=e584]
+                      - listitem [ref=e585]:
+                        - img "Apple Cinema 30&quot;" [ref=e586]
+                  - generic [ref=e587]:
+                    - button "" [ref=e588] [cursor=pointer]
+                    - button "" [ref=e590] [cursor=pointer]
+                    - button "" [ref=e592] [cursor=pointer]
+                    - button "" [ref=e594] [cursor=pointer]
+                - generic [ref=e596]:
+                  - heading [level=4] [ref=e597]:
+                    - link "Apple Cinema 30\"" [ref=e598] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=88
+                  - generic [ref=e599]: $122.00
+              - generic [ref=e601]:
+                - generic [ref=e602]:
+                  - link [ref=e604] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=89
+                    - img "Apple Cinema 30&quot;" [ref=e607]
+                    - list [ref=e608]:
+                      - listitem [ref=e609]:
+                        - img "Apple Cinema 30&quot;" [ref=e610]
+                      - listitem [ref=e611]:
+                        - img "Apple Cinema 30&quot;" [ref=e612]
+                      - listitem [ref=e613]:
+                        - img "Apple Cinema 30&quot;" [ref=e614]
+                  - generic [ref=e615]:
+                    - button "" [ref=e616] [cursor=pointer]
+                    - button "" [ref=e618] [cursor=pointer]
+                    - button "" [ref=e620] [cursor=pointer]
+                    - button "" [ref=e622] [cursor=pointer]
+                - generic [ref=e624]:
+                  - heading [level=4] [ref=e625]:
+                    - link "Apple Cinema 30\"" [ref=e626] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=89
+                  - generic [ref=e627]: $122.00
+              - generic [ref=e629]:
+                - generic [ref=e630]:
+                  - link [ref=e632] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=90
+                    - img "Apple Cinema 30&quot;" [ref=e635]
+                    - list [ref=e636]:
+                      - listitem [ref=e637]:
+                        - img "Apple Cinema 30&quot;" [ref=e638]
+                      - listitem [ref=e639]:
+                        - img "Apple Cinema 30&quot;" [ref=e640]
+                      - listitem [ref=e641]:
+                        - img "Apple Cinema 30&quot;" [ref=e642]
+                  - generic [ref=e643]:
+                    - button "" [ref=e644] [cursor=pointer]
+                    - button "" [ref=e646] [cursor=pointer]
+                    - button "" [ref=e648] [cursor=pointer]
+                    - button "" [ref=e650] [cursor=pointer]
+                - generic [ref=e652]:
+                  - heading [level=4] [ref=e653]:
+                    - link "Apple Cinema 30\"" [ref=e654] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=90
+                  - generic [ref=e655]: $122.00
+              - generic [ref=e657]:
+                - generic [ref=e658]:
+                  - link [ref=e660] [cursor=pointer]:
+                    - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=91
+                    - img "Apple Cinema 30&quot;" [ref=e663]
+                    - list [ref=e664]:
+                      - listitem [ref=e665]:
+                        - img "Apple Cinema 30&quot;" [ref=e666]
+                      - listitem [ref=e667]:
+                        - img "Apple Cinema 30&quot;" [ref=e668]
+                      - listitem [ref=e669]:
+                        - img "Apple Cinema 30&quot;" [ref=e670]
+                  - generic [ref=e671]:
+                    - button "" [ref=e672] [cursor=pointer]
+                    - button "" [ref=e674] [cursor=pointer]
+                    - button "" [ref=e676] [cursor=pointer]
+                    - button "" [ref=e678] [cursor=pointer]
+                - generic [ref=e680]:
+                  - heading [level=4] [ref=e681]:
+                    - link "Apple Cinema 30\"" [ref=e682] [cursor=pointer]:
+                      - /url: https://ecommerce-playground.lambdatest.io/index.php?route=product/product&product_id=91
+                  - generic [ref=e683]: $122.00
+        - generic [ref=e686]:
+          - heading "FAQ (Frequently Asked Questions)" [level=3] [ref=e687]
+          - generic [ref=e688]:
+            - heading "How can I change my shipping address? " [level=5] [ref=e691] [cursor=pointer]:
+              - generic [ref=e692]: How can I change my shipping address?
+              - generic [ref=e693]: 
+            - heading "How can I change my shipping address? " [level=5] [ref=e696] [cursor=pointer]:
+              - generic [ref=e697]: How can I change my shipping address?
+              - generic [ref=e698]: 
+            - heading "How do I activate my account? " [level=5] [ref=e701] [cursor=pointer]:
+              - generic [ref=e702]: How do I activate my account?
+              - generic [ref=e703]: 
+            - heading "What do you mean by points? How do I earn it? " [level=5] [ref=e706] [cursor=pointer]:
+              - generic [ref=e707]: What do you mean by points? How do I earn it?
+              - generic [ref=e708]: 
+            - heading "Why is there a checkout limit? / What are all the checkout limits? " [level=5] [ref=e711] [cursor=pointer]:
+              - generic [ref=e712]: Why is there a checkout limit? / What are all the checkout limits?
+              - generic [ref=e713]: 
+            - heading "Why must I make payment immediately at checkout? " [level=5] [ref=e716] [cursor=pointer]:
+              - generic [ref=e717]: Why must I make payment immediately at checkout?
+              - generic [ref=e718]: 
+      - contentinfo [ref=e719]:
+        - paragraph [ref=e725]: © LambdaTest - Powered by OpenCart
+  - text:  
+```
+
+# Test source
+
+```ts
+  1  | import type { Page } from '@playwright/test';
+  2  | import { createLogger, type Logger } from '../utils';
+  3  | 
+  4  | /**
+  5  |  * Base class for all page objects.
+  6  |  *
+  7  |  * Provides navigation and logging. It deliberately contains no business
+  8  |  * assertions — those belong in tests.
+  9  |  */
+  10 | export abstract class BasePage {
+  11 |   protected readonly log: Logger;
+  12 | 
+  13 |   constructor(protected readonly page: Page) {
+  14 |     this.log = createLogger(this.constructor.name);
+  15 |   }
+  16 | 
+  17 |   /** Navigate to a relative URL (resolved against Playwright `baseURL`). */
+  18 |   async goto(url: string): Promise<void> {
+  19 |     this.log.info(`Open ${url}`);
+> 20 |     await this.page.goto(url);
+     |                     ^ TimeoutError: page.goto: Timeout 30000ms exceeded.
+  21 |   }
+  22 | }
+  23 | 
+```

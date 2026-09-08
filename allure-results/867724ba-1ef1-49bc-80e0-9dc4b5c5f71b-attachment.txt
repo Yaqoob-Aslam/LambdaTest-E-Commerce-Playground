@@ -1,0 +1,1 @@
+[2026-09-28T09:40:57.076Z] [INFO] [SearchPage] Open /index.php?route=product/search&search=iMac

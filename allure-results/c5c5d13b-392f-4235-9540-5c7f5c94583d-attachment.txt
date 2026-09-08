@@ -1,0 +1,1 @@
+[2026-09-26T12:27:56.860Z] [INFO] [LoginPage] Open /index.php?route=account/login
