@@ -10,3 +10,18 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 .playwright-mcp/
+
+# Build output
+dist/
+
+# Allure
+allure-results/
+allure-report/
+
+# Framework screenshots
+screenshots/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local

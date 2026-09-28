@@ -1,0 +1,10 @@
+{
+  "contact": {
+    "valid": {
+      "name": "QA Tester",
+      "email": "qa.tester@example.com",
+      "enquiry": "This is an automated test enquiry message."
+    },
+    "invalidEmail": "not-an-email"
+  }
+}

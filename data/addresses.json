@@ -1,0 +1,12 @@
+{
+  "unitedKingdom": {
+    "firstName": "Guest",
+    "lastName": "Shopper",
+    "address1": "1 Test Street",
+    "address2": "",
+    "city": "London",
+    "postCode": "EC1A 1BB",
+    "country": "United Kingdom",
+    "zone": "Greater London"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "products": {
+    "iMac": { "id": "41", "name": "iMac", "price": "$170.00" },
+    "htcTouchHd": { "id": "28", "name": "HTC Touch HD", "price": "$146.00" }
+  },
+  "categories": {
+    "laptops": {
+      "path": "18",
+      "name": "Laptops",
+      "productCount": 75,
+      "pageTwoSummary": "Showing 16 to 30 of 75",
+      "firstByNameAsc": "Apple Cinema 30\"",
+      "firstByNameDesc": "Sony VAIO",
+      "firstByPriceDesc": "MacBook Pro",
+      "firstByPriceDescValue": "$2,000.00",
+      "firstByPriceAsc": "Nikon D300"
+    }
+  },
+  "manufacturers": {
+    "apple": { "id": "8", "name": "Apple" }
+  },
+  "searchTerms": {
+    "exact": "iMac",
+    "partial": "Mac",
+    "nonExistent": "zxcvbnm123",
+    "specialCharacters": "!!!@@@###"
+  }
+}
